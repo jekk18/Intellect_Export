@@ -34,8 +34,8 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    height: 177px;
-    transition: 0.5s;
+    height: 110px;
+    transition: 0.3s;
     z-index: 5;
 }
 .head-cont{
@@ -45,8 +45,8 @@ header{
     padding-top: 23px;
 }
 .head-cont .logo{
-    width: 160px;
-    height: 130px;
+    /* width: 260px; */
+    height: 62px;
     transition: 0.5s;
 }
 .head-cont .logo a{
@@ -64,7 +64,7 @@ header{
 }
 .navigation,
 .search-box{
-    padding-top: 40px;
+    padding-top: 23px;
 }
 .navigation nav{
     display: flex;
@@ -72,21 +72,31 @@ header{
 }
 .navigation nav li{
     list-style: none;
-    margin: 0 30px;
+    margin: 0 60px;
 }
 .navigation nav li a{
-    padding: 14px 30px;
-    border: 2px solid transparent;
-    border-radius: 10px;
-    color: #fff;
+    /* padding: 14px 30px; */
+    /* border: 2px solid transparent; */
+    /* border-radius: 10px; */
+    color: #D0D0D0;
     font-size: var(--font7);
     font-family: 'Lato';
     font-weight: bold;
     transition: 0.5s;
 }
-.navigation nav li a:hover,
-.navigation nav li a.active{
-    border: 2px solid #fff;
+.navigation nav li:last-child a{
+    padding: 14px 30px;
+    border: 2px solid #D0D0D0;
+    border-radius: 10px;
+}
+.navigation nav li:hover a,
+.navigation nav li.colored a{
+    color: #1A1A1A;
+}
+.navigation nav li:last-child:hover a,
+.navigation nav li:last-child.colored a{
+    border: 2px solid #F89C1C;
+    color: #F89C1C;
 }
 
 .search-box{
@@ -102,12 +112,19 @@ header{
     font-weight: normal;
     font-family: 'Lato';
     color: #fff;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 .search-box a span{
     margin-right: 10px;
     color: #fff;
     font-size: 22px;
+    transition: 0.3s;
+}
+.search-box a:hover {
+    color: #28579E;
+}
+.search-box a:hover span{
+    color: #28579E;
 }
 .search-box .lang-box{
     position: relative;
@@ -121,6 +138,13 @@ header{
     padding-right: 20px;
     transition: 0.5s;
     cursor: pointer;
+}
+.search-box .lang-box .lang a{
+    transition: 0.3s;
+    height: 23px;
+}
+.search-box .lang-box .lang a:hover{
+    color: #28579E;
 }
 .search-box .lang-box span i{
     position: absolute;
@@ -148,20 +172,32 @@ header{
 .header-bg .logo a:last-child{
     display: block;
 }
-.header-bg .navigation nav li a{
-    color: #1A1A1A;
-   
+
+.header-bg .navigation nav li:last-child:hover a{
+    border: 2px solid #F89C1C;
 }
-.header-bg .navigation nav li a:hover,
+/* .header-bg .navigation nav li a:hover,
 .header-bg .navigation nav li a.active{
     border: 2px solid #1A1A1A;
-}
+} */
 .header-bg .search-box a,
 .header-bg .search-box a span,
+.header-bg .search-box  .line,
 .header-bg .search-box .lang-box span i,
 .header-bg .search-box .lang-box .lang a{
     color: #1A1A1A; 
 }
+
+.header-bg .search-box a:hover {
+    color: #28579E;
+}
+.header-bg .search-box a:hover span{
+    color: #28579E;
+}
+.header-bg .search-box .lang-box .lang a:hover{
+    color: #28579E;
+}
+
 /* Header */
 
 
@@ -538,12 +574,13 @@ header{
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    background: rgba(40, 87, 158, 1);
+    background: #D3DEEF;
     transition: 0.4s;
     margin-bottom: 40px;
 }
 .services-item:hover{
     box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.75);
+    background: #28579E;
 }
 .services-item .white-box{
     width: 125px;
@@ -563,7 +600,7 @@ header{
 .services-item h2{
     font-size: var(--font6);
     font-weight: bold;
-    color: #fff;
+    color: #1A1A1A;
     font-family: 'Lato';
     margin-bottom: 20px;
     transition: 0.4s;
@@ -572,7 +609,7 @@ header{
 }
 .services-item .text{
     font-size: var(--font6);
-    color: #fff;
+    color: #1A1A1A;
     font-family: 'Lato';
     line-height: 31px;
     max-width: 90%;
@@ -581,10 +618,14 @@ header{
     overflow: hidden;
     transition: 0.4s;
 }
-.add-color:nth-child(3n-1) .services-item{
+.services-item:hover h2,
+.services-item:hover .text{
+    color: #fff;
+}
+.add-color:nth-child(3n-1):hover .services-item{
     background: rgba(248, 156, 28, 1);
 }
-.add-color:nth-child(3n) .services-item{
+.add-color:nth-child(3n):hover .services-item{
     background: rgba(24, 187, 201, 1);
 }
 /* Services Section */
@@ -863,7 +904,7 @@ header{
 .home-banner{
     height: 300px;
     width: 100%;
-    margin-top: 177px;
+    margin-top: 110px;
 }
 .home-banner img{
     width: 100%;
@@ -873,7 +914,7 @@ header{
 
 .text-section{
     width: 100%;
-    padding: 80px 0 0 0;
+    padding: 40px 0 0 0;
 }
 .text-area{
     width: 100%;
@@ -881,10 +922,22 @@ header{
 }
 .text-area .title-text{
     width: fit-content;
+    /* padding-top: 20px; */
+}
+.border-first:first-child .text-area .title-text{
+    width: fit-content;
     padding-top: 20px;
     border-top: 2px solid #575762;
 }
 .text-area .title-text h1{
+    font-size: var(--font3);
+    line-height: 36px;
+    font-family: 'Lato';
+    font-weight: bold;
+    color: #575762;
+    margin-bottom: 20px;
+}
+.border-first:first-child .text-area .title-text h1{
     font-size: var(--font2);
     line-height: 44px;
     font-family: 'Lato';
@@ -905,6 +958,9 @@ header{
     display: flex;
     justify-content: flex-end;
 }
+.border-first:first-child .right-side-img .right-img{
+    padding-top:20px;
+}
 .right-side-img .right-img {
     width: 290px;
     height: 270px;
@@ -918,31 +974,208 @@ header{
 .p-t{
     padding-top: 60px;
 }
+.p-tt-2{
+    padding-top: 0px;
+}
 
 /* Project List Page */
 
 /* About Us Page */
 
-.text-area2{
-    width: 100%;
-    margin-bottom: 80px;
-}
-.text-area2 .title-text2 h2{
-    font-size: var(--font3);
-    line-height: 36px;
-    font-family: 'Lato';
-    font-weight: bold;
-    color: #575762;
-    margin-bottom: 20px;
-}
-.text-area2 .text {
-    font-size: var(--font7);
-    line-height: 30px;
-    font-family: 'Lato';
-    color: #707070;
-}
-
 .p-t-2{
     padding: 100px 0 50px 0;
 }
+
 /* About Us Page */
+
+/* Project - Detail */
+
+.detail-content{
+    width: 100%;
+    padding: 40px 0 0 0;
+}
+.det-2-p{
+    padding-bottom: 100px;
+}
+.special-row-box{
+    width: 100%;
+    padding: 60px 0 20px 0;
+}
+.special-row-box:nth-child(2n){
+    background: #F5F5F5;
+}
+.special-row-box:first-child{
+    padding: 0 0 20px;
+}
+.detail-text-area h1{
+    font-size: var(--font3);
+    font-family: 'Lato';
+    color: #575762;
+    margin-bottom: 20px;
+    line-height: 36px;
+    font-weight: bold;
+}
+.detail-text-area h2{
+    font-size: var(--font4);
+    font-family: 'Lato';
+    color: #575762;
+    margin-bottom: 20px;
+    line-height: 36px;
+    font-weight: bold;
+}
+.detail-text-area .text{
+    font-size: var(--font7);
+    line-height: 35px;
+    font-family: 'Lato';
+    color: #575762;
+    margin-bottom: 40px;
+}
+
+.detail-image{
+    height: 430px;
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 0 3px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.p-r-1{
+    padding-right: 17.1%;
+}
+.p-r-2{
+    padding-right: 13.8%;
+}
+
+.detail-image a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px!important;
+}
+
+/* Project - Detail */
+
+/* BandCamp */
+
+.bandcamp{
+    width: 100%;
+    margin-top: 40px;
+}
+.bandcamp ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.bandcamp ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+.bandcamp ul li a{
+    font-size: var(--font7);
+    color: #707070;
+    font-family: 'Lato';
+    transition: 0.4s;
+}
+.bandcamp ul li span i{
+    color: #1A1A1A;
+    transform: rotate(-90deg);
+}
+.bandcamp ul li.brand-colored a,
+.bandcamp ul li:hover a{
+    color: #1A1A1A;
+}
+
+/* BandCamp */
+
+/* Services Section */
+
+
+.services-boxes{
+    width: 100%;
+    padding: 40px 0 60px 0;
+}
+.services-boxes:nth-child(2n){
+    background: #F9F9F9;
+}
+.service-text-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.img-icon{
+    width: 81px;
+    height: 81px;
+    border-radius: 15px;
+    background: #7DA9EB;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.img-icon img{
+    width: 70%;
+    height: 70%;
+}
+.service-text-box h1{
+    font-size: var(--font2);
+    color: #1A1A1A;
+    font-family: 'Lato';
+    font-weight: bold;
+    line-height: 44px;
+    margin-bottom: 20px;
+}
+.service-text-box .text{
+    font-size: var(--font7);
+    line-height: 35px;
+    color: #1A1A1A;
+    font-family: 'Lato';
+    width: 100%;
+    max-height: 101px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding-right: 6%;
+}
+.service-text-box ul{
+    display: flex;
+    margin-bottom: 40px;
+    padding-left: 0;
+}
+.service-text-box ul li{
+    margin: 0 20px;
+    font-size: var(--font7);
+    line-height: 35px;
+    color: #1A1A1A;
+    font-family: 'Lato';
+}
+.service-text-box .booking-service{
+    padding: 13px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Lato';
+    transition: 0.4s;
+    background: #F89C1C;
+    width: fit-content;
+    border-radius: 10px;
+}
+.service-text-box .booking-service:hover{
+    background: #142C51;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.75);
+}
+.service-box-right-img{
+    width: 100%;
+}
+.service-box-right-img .service-box-img{
+    width: 358px;
+    height: 348px;
+    border-radius: 20px;
+    transition: 0.4s;
+    float: right;
+}
+.service-box-right-img .service-box-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+/* Services Section */

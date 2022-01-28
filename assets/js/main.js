@@ -47,3 +47,6 @@ $('.main-slider').slick({
     if (scroll >= 1) headSticky.addClass('header-bg');
     else headSticky.removeClass('header-bg');
   });
+  $(document).on('click', '.navigation nav li', function(){
+    $(this).addClass('colored').siblings().removeClass('colored');
+  })

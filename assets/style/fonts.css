@@ -103,7 +103,7 @@
 }
 .icon-fa:before {
   content: "\e901";
-  color: #fff;
+  /* color: #fff; */
 }
 .icon-li:before {
   content: "\e902";

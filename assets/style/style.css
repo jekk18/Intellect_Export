@@ -165,17 +165,20 @@ header{
     transform: rotate(-180deg);
 }
 
-.header-bg{
+.header-bg, .header-bg2{
     background: #fff;
 }
-.header-bg .logo a:first-child{
+.header-bg .logo a:first-child,
+.header-bg-2 .logo a:first-child{
     display: none;
 }
-.header-bg .logo a:last-child{
+.header-bg .logo a:last-child,
+.header-bg-2 .logo a:last-child{
     display: block;
 }
 
-.header-bg .navigation nav li:last-child:hover a{
+.header-bg .navigation nav li:last-child:hover a,
+.header-bg-2 .navigation nav li:last-child:hover a{
     border: 2px solid #F89C1C;
 }
 /* .header-bg .navigation nav li a:hover,
@@ -186,17 +189,25 @@ header{
 .header-bg .search-box a span,
 .header-bg .search-box  .line,
 .header-bg .search-box .lang-box span i,
-.header-bg .search-box .lang-box .lang a{
+.header-bg .search-box .lang-box .lang a,
+.header-bg-2 .search-box a,
+.header-bg-2 .search-box a span,
+.header-bg-2 .search-box  .line,
+.header-bg-2 .search-box .lang-box span i,
+.header-bg-2 .search-box .lang-box .lang a{
     color: #1A1A1A; 
 }
 
-.header-bg .search-box a:hover {
+.header-bg .search-box a:hover,
+.header-bg-2 .search-box a:hover {
     color: #28579E;
 }
-.header-bg .search-box a:hover span{
+.header-bg .search-box a:hover span,
+.header-bg-2 .search-box a:hover span{
     color: #28579E;
 }
-.header-bg .search-box .lang-box .lang a:hover{
+.header-bg .search-box .lang-box .lang a:hover,
+.header-bg-2 .search-box .lang-box .lang a:hover{
     color: #28579E;
 }
 
@@ -485,6 +496,9 @@ header{
     height: 507px;
     /* width: 520px; */
 }
+/* .slick-slide{
+    width: 20%!important;
+} */
 /* .slick-slide {
     width: auto!important;
 }
@@ -1118,6 +1132,15 @@ header{
     justify-content: center;
     margin-bottom: 20px;
 }
+.services-boxes:first-child .img-icon{
+    background: #7DA9EB;
+}
+.services-boxes:nth-child(3n-1) .img-icon{
+    background: #FFECD1;
+}
+.services-boxes:nth-child(3n) .img-icon{
+    background: #BFEEF2;
+}
 .img-icon img{
     width: 70%;
     height: 70%;
@@ -1359,6 +1382,10 @@ header{
 }
 .bandc-m-t{
     margin-top: 150px;
+}
+.right-side-img .team-right-img{
+    width: 378px;
+    height: 378px;
 }
 .img-border img{
     border-radius: 20px;

@@ -1181,10 +1181,16 @@ header{
 }
 .service-text-box ul li{
     margin: 0 20px;
+}
+.service-text-box ul li a{
     font-size: var(--font7);
     line-height: 35px;
     color: #1A1A1A;
     font-family: 'Lato';
+    transition: 0.4s;
+}
+.service-text-box ul li a:hover{
+    text-decoration: underline;
 }
 .service-text-box .booking-service{
     padding: 13px;

@@ -528,7 +528,7 @@ header{
 .project-item{
     /* width: 400px; */
     /* height: 400px!important; */
-    padding: 0 20px;
+    /* padding: 0 20px; */
     /* height: fit-content!important; */
 }
 .project-item .project-img{
@@ -545,22 +545,22 @@ header{
 }
 .slick-slide .project-img{
     height: 375px;
-    /* width: 410px; */
+    width: 516px;
 }
 .slick-cloned .project-img{
     height: 375px;
-    /* width: 410px; */
+    width: 516px;
 }
 .slick-active .project-img{
     height: 430px;
-    /* width: 470px; */
+    width: 470px;
 }
 .slick-center .project-img{
     height: 507px;
-    /* width: 520px; */
+    width: 520px;
 }
 /* .slick-slide{
-    width: 20%!important;
+    width: 500px!important;
 } */
 /* .slick-slide {
     width: auto!important;
@@ -1337,7 +1337,7 @@ header{
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
-    padding-right: 26px;
+    padding-right: 23px;
 }
 .add-p-r:nth-child(4n) .team-members{
     padding-right: initial;

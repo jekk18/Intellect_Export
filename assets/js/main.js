@@ -10,7 +10,7 @@ $('.main-slider').slick({
   $(document).ready(function(){
     $('.project-slider').slick({
         centerMode: true,
-        centerPadding: '60px',
+        centerPadding: '150px',
         slidesToShow: 3,
         nextArrow: false,
         prevArrow: false,

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
+    <title>Team</title>
     <link rel="stylesheet" href="assets/style/bootstrap.css">
     <link rel="stylesheet" href="assets/style/fonts.css">
     <link rel="stylesheet" href="assets/style/style.css">
@@ -103,123 +103,319 @@
                             <div class="team-list-links">
                                 <h1>Our Experts</h1>
                                 <div class="list-links">
-                                    <li class="add-col"><a href="#">All</a></li>
-                                    <li><a href="#">Management</a></li>
-                                    <li><a href="#">Design&Art</a></li>
-                                    <li><a href="#">PR&Marketing</a></li>
+                                    <button class="tablinks active-color" onclick="openPos(event, 'all')">All</button>
+                                    <button class="tablinks" onclick="openPos(event, 'managment')">Managements</button>
+                                    <button class="tablinks" onclick="openPos(event, 'marketing')">PR&Marketing</button>
+                                    <button class="tablinks" onclick="openPos(event, 'design')">Design&Art</button>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
-                                    <div class="team-members">
-                                        <a href="#">
-                                            <div class="members-img">
-                                                <img src="assets/img/P-img2.jpg" alt="">
-                                            </div>
-                                            <div class="members-info">
-                                                <h1>Elisabeth Wilson</h1>
-                                                <h2>Designer</h2>
-                                                <span><img src="assets/img/Vector.svg" alt="arrow"></span>
-                                            </div>
-                                        </a>
+                            <div class="tabcontent" id="all" style="display: block;">
+                                <div class="row">
+                                    <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
+                                        <div class="team-members">
+                                            <a href="#">
+                                                <div class="members-img">
+                                                    <img src="assets/img/P-img2.jpg" alt="">
+                                                </div>
+                                                <div class="members-info">
+                                                    <h1>Elisabeth Wilson</h1>
+                                                    <h2>Designer</h2>
+                                                    <span><img src="assets/img/Vector.svg" alt="arrow"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
+                                        <div class="team-members">
+                                            <a href="#">
+                                                <div class="members-img">
+                                                    <img src="assets/img/Mask Group 47.png" alt="">
+                                                </div>
+                                                <div class="members-info">
+                                                    <h1>Elisabeth Wilson</h1>
+                                                    <h2>Designer</h2>
+                                                    <span><img src="assets/img/Vector.svg" alt="arrow"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
+                                        <div class="team-members">
+                                            <a href="#">
+                                                <div class="members-img">
+                                                    <img src="assets/img/P-img1.jpg" alt="">
+                                                </div>
+                                                <div class="members-info">
+                                                    <h1>Elisabeth Wilson</h1>
+                                                    <h2>Designer</h2>
+                                                    <span><img src="assets/img/Vector.svg" alt="arrow"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
+                                        <div class="team-members">
+                                            <a href="#">
+                                                <div class="members-img">
+                                                    <img src="assets/img/P-img2.jpg" alt="img">
+                                                </div>
+                                                <div class="members-info">
+                                                    <h1>Elisabeth Wilson</h1>
+                                                    <h2>Designer</h2>
+                                                    <span><img src="assets/img/Vector.svg" alt="arrow"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
+                                        <div class="team-members">
+                                            <a href="#">
+                                                <div class="members-img">
+                                                    <img src="assets/img/P-img3.jpg" alt="img">
+                                                </div>
+                                                <div class="members-info">
+                                                    <h1>Elisabeth Wilson</h1>
+                                                    <h2>Designer</h2>
+                                                    <span><img src="assets/img/Vector.svg" alt="arrow"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
+                                        <div class="team-members">
+                                            <a href="#">
+                                                <div class="members-img">
+                                                    <img src="assets/img/Mask Group 47.png" alt="img">
+                                                </div>
+                                                <div class="members-info">
+                                                    <h1>Elisabeth Wilson</h1>
+                                                    <h2>Designer</h2>
+                                                    <span><img src="assets/img/Vector.svg" alt="arrow"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
+                                        <div class="team-members">
+                                            <a href="#">
+                                                <div class="members-img">
+                                                    <img src="assets/img/P-img1.jpg" alt="img">
+                                                </div>
+                                                <div class="members-info">
+                                                    <h1>Elisabeth Wilson</h1>
+                                                    <h2>Designer</h2>
+                                                    <span><img src="assets/img/Vector.svg" alt="arrow"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
+                                        <div class="team-members">
+                                            <a href="#">
+                                                <div class="members-img">
+                                                    <img src="assets/img/P-img2.jpg" alt="img">
+                                                </div>
+                                                <div class="members-info">
+                                                    <h1>Elisabeth Wilson</h1>
+                                                    <h2>Designer</h2>
+                                                    <span><img src="assets/img/Vector.svg" alt="arrow"></span>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
-                                    <div class="team-members">
-                                        <a href="#">
-                                            <div class="members-img">
-                                                <img src="assets/img/Mask Group 47.png" alt="">
-                                            </div>
-                                            <div class="members-info">
-                                                <h1>Elisabeth Wilson</h1>
-                                                <h2>Designer</h2>
-                                                <span><img src="assets/img/Vector.svg" alt="arrow"></span>
-                                            </div>
-                                        </a>
+                            </div>
+                            <div class="tabcontent" id="managment">
+                                <div class="row">
+                                    <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
+                                        <div class="team-members">
+                                            <a href="#">
+                                                <div class="members-img">
+                                                    <img src="assets/img/P-img2.jpg" alt="img">
+                                                </div>
+                                                <div class="members-info">
+                                                    <h1>Elisabeth Wilson</h1>
+                                                    <h2>Designer</h2>
+                                                    <span><img src="assets/img/Vector.svg" alt="arrow"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
+                                        <div class="team-members">
+                                            <a href="#">
+                                                <div class="members-img">
+                                                    <img src="assets/img/P-img3.jpg" alt="img">
+                                                </div>
+                                                <div class="members-info">
+                                                    <h1>Elisabeth Wilson</h1>
+                                                    <h2>Designer</h2>
+                                                    <span><img src="assets/img/Vector.svg" alt="arrow"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
+                                        <div class="team-members">
+                                            <a href="#">
+                                                <div class="members-img">
+                                                    <img src="assets/img/Mask Group 47.png" alt="img">
+                                                </div>
+                                                <div class="members-info">
+                                                    <h1>Elisabeth Wilson</h1>
+                                                    <h2>Designer</h2>
+                                                    <span><img src="assets/img/Vector.svg" alt="arrow"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
+                                        <div class="team-members">
+                                            <a href="#">
+                                                <div class="members-img">
+                                                    <img src="assets/img/P-img1.jpg" alt="img">
+                                                </div>
+                                                <div class="members-info">
+                                                    <h1>Elisabeth Wilson</h1>
+                                                    <h2>Designer</h2>
+                                                    <span><img src="assets/img/Vector.svg" alt="arrow"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
+                                        <div class="team-members">
+                                            <a href="#">
+                                                <div class="members-img">
+                                                    <img src="assets/img/P-img2.jpg" alt="img">
+                                                </div>
+                                                <div class="members-info">
+                                                    <h1>Elisabeth Wilson</h1>
+                                                    <h2>Designer</h2>
+                                                    <span><img src="assets/img/Vector.svg" alt="arrow"></span>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
-                                    <div class="team-members">
-                                        <a href="#">
-                                            <div class="members-img">
-                                                <img src="assets/img/P-img1.jpg" alt="">
-                                            </div>
-                                            <div class="members-info">
-                                                <h1>Elisabeth Wilson</h1>
-                                                <h2>Designer</h2>
-                                                <span><img src="assets/img/Vector.svg" alt="arrow"></span>
-                                            </div>
-                                        </a>
+                            </div>
+                            <div class="tabcontent" id="marketing">
+                                <div class="row">
+                                    <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
+                                        <div class="team-members">
+                                            <a href="#">
+                                                <div class="members-img">
+                                                    <img src="assets/img/P-img2.jpg" alt="">
+                                                </div>
+                                                <div class="members-info">
+                                                    <h1>Elisabeth Wilson</h1>
+                                                    <h2>Designer</h2>
+                                                    <span><img src="assets/img/Vector.svg" alt="arrow"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
+                                        <div class="team-members">
+                                            <a href="#">
+                                                <div class="members-img">
+                                                    <img src="assets/img/Mask Group 47.png" alt="">
+                                                </div>
+                                                <div class="members-info">
+                                                    <h1>Elisabeth Wilson</h1>
+                                                    <h2>Designer</h2>
+                                                    <span><img src="assets/img/Vector.svg" alt="arrow"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
+                                        <div class="team-members">
+                                            <a href="#">
+                                                <div class="members-img">
+                                                    <img src="assets/img/P-img1.jpg" alt="">
+                                                </div>
+                                                <div class="members-info">
+                                                    <h1>Elisabeth Wilson</h1>
+                                                    <h2>Designer</h2>
+                                                    <span><img src="assets/img/Vector.svg" alt="arrow"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
+                                        <div class="team-members">
+                                            <a href="#">
+                                                <div class="members-img">
+                                                    <img src="assets/img/Mask Group 47.png" alt="img">
+                                                </div>
+                                                <div class="members-info">
+                                                    <h1>Elisabeth Wilson</h1>
+                                                    <h2>Designer</h2>
+                                                    <span><img src="assets/img/Vector.svg" alt="arrow"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
+                                        <div class="team-members">
+                                            <a href="#">
+                                                <div class="members-img">
+                                                    <img src="assets/img/P-img1.jpg" alt="img">
+                                                </div>
+                                                <div class="members-info">
+                                                    <h1>Elisabeth Wilson</h1>
+                                                    <h2>Designer</h2>
+                                                    <span><img src="assets/img/Vector.svg" alt="arrow"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
+                                        <div class="team-members">
+                                            <a href="#">
+                                                <div class="members-img">
+                                                    <img src="assets/img/P-img2.jpg" alt="img">
+                                                </div>
+                                                <div class="members-info">
+                                                    <h1>Elisabeth Wilson</h1>
+                                                    <h2>Designer</h2>
+                                                    <span><img src="assets/img/Vector.svg" alt="arrow"></span>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
-                                    <div class="team-members">
-                                        <a href="#">
-                                            <div class="members-img">
-                                                <img src="assets/img/P-img2.jpg" alt="img">
-                                            </div>
-                                            <div class="members-info">
-                                                <h1>Elisabeth Wilson</h1>
-                                                <h2>Designer</h2>
-                                                <span><img src="assets/img/Vector.svg" alt="arrow"></span>
-                                            </div>
-                                        </a>
+                            </div>
+                            <div class="tabcontent" id="design">
+                                <div class="row">
+                                    <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
+                                        <div class="team-members">
+                                            <a href="#">
+                                                <div class="members-img">
+                                                    <img src="assets/img/P-img1.jpg" alt="img">
+                                                </div>
+                                                <div class="members-info">
+                                                    <h1>Elisabeth Wilson</h1>
+                                                    <h2>Designer</h2>
+                                                    <span><img src="assets/img/Vector.svg" alt="arrow"></span>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
-                                    <div class="team-members">
-                                        <a href="#">
-                                            <div class="members-img">
-                                                <img src="assets/img/P-img3.jpg" alt="img">
-                                            </div>
-                                            <div class="members-info">
-                                                <h1>Elisabeth Wilson</h1>
-                                                <h2>Designer</h2>
-                                                <span><img src="assets/img/Vector.svg" alt="arrow"></span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
-                                    <div class="team-members">
-                                        <a href="#">
-                                            <div class="members-img">
-                                                <img src="assets/img/Mask Group 47.png" alt="img">
-                                            </div>
-                                            <div class="members-info">
-                                                <h1>Elisabeth Wilson</h1>
-                                                <h2>Designer</h2>
-                                                <span><img src="assets/img/Vector.svg" alt="arrow"></span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
-                                    <div class="team-members">
-                                        <a href="#">
-                                            <div class="members-img">
-                                                <img src="assets/img/P-img1.jpg" alt="img">
-                                            </div>
-                                            <div class="members-info">
-                                                <h1>Elisabeth Wilson</h1>
-                                                <h2>Designer</h2>
-                                                <span><img src="assets/img/Vector.svg" alt="arrow"></span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
-                                    <div class="team-members">
-                                        <a href="#">
-                                            <div class="members-img">
-                                                <img src="assets/img/P-img2.jpg" alt="img">
-                                            </div>
-                                            <div class="members-info">
-                                                <h1>Elisabeth Wilson</h1>
-                                                <h2>Designer</h2>
-                                                <span><img src="assets/img/Vector.svg" alt="arrow"></span>
-                                            </div>
-                                        </a>
+                                    <div class="col-xxl-3 col-lg-3 col-md-3 add-p-r">
+                                        <div class="team-members">
+                                            <a href="#">
+                                                <div class="members-img">
+                                                    <img src="assets/img/P-img2.jpg" alt="img">
+                                                </div>
+                                                <div class="members-info">
+                                                    <h1>Elisabeth Wilson</h1>
+                                                    <h2>Designer</h2>
+                                                    <span><img src="assets/img/Vector.svg" alt="arrow"></span>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

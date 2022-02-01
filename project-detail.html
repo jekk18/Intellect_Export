@@ -127,32 +127,32 @@
         </div>
     </section>
 
-       <section>
-        <div class="recent-projects p-tt-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xxl-12 col-lg-12 col-md-12">
-                        <div class="recent-project-text">
-                            <h1>Our recent projects</h1>
-                            <h3>Meet our talent who provides you best services</h3>
-                        </div>
+    <div class="recent-projects p-tt-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-12 col-lg-12 col-md-12">
+                    <div class="recent-project-text">
+                        <h1>Our recent projects</h1>
+                        <h3>Meet our talent who provides you best services</h3>
                     </div>
-                    <div class="col-xxl-12 col-lg-12 col-md-12">
-                        <div class="projects-links">
-                            <div class="left-side-links">
-                                <li><a href="#" class="active-color">All</a></li>
-                                <li><a href="#">Managements</a></li>
-                                <li><a href="#">PR&Marketing</a></li>
-                                <li><a href="#">Design&Art</a></li>
-                            </div>
-                            <div class="right-side-links">
-                                <a href="#" class="all-projects-link">See All Projects</a>
-                            </div>
+                </div>
+                <div class="col-xxl-12 col-lg-12 col-md-12">
+                    <div class="projects-links">
+                        <div class="left-side-links">
+                            <button class="tablinks active-color" onclick="openPos(event, 'all')">All</button>
+                            <button class="tablinks" onclick="openPos(event, 'managment')">Managements</button>
+                            <button class="tablinks" onclick="openPos(event, 'marketing')">PR&Marketing</button>
+                            <button class="tablinks" onclick="openPos(event, 'design')">Design&Art</button>
+                        </div>
+                        <div class="right-side-links">
+                            <a href="#" class="all-projects-link">See All Projects</a>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="tabcontent" id="all" style="display: block;">
                 <div class="row">
-                    <div class="col-xxl-3 col-lg-3 col-md-3">
+                    <div class="col-xxl-3 col-lg-3 col-md-3 ">
                         <a href="#" class="recent-item">
                             <div class="recent-project-img">
                                 <img src="assets/img/Mask Group 17.jpg" alt="img">
@@ -165,6 +165,7 @@
                             </div>
                         </a>
                     </div>
+                    
                     <div class="col-xxl-3 col-lg-3 col-md-3">
                         <a href="#" class="recent-item">
                             <div class="recent-project-img">
@@ -206,8 +207,137 @@
                     </div>
                 </div>
             </div>
+            <div class="tabcontent" id="managment">
+                <div class="row">
+                    <div class="col-xxl-3 col-lg-3 col-md-3 ">
+                        <a href="#" class="recent-item">
+                            <div class="recent-project-img">
+                                <img src="assets/img/Mask Group 17.jpg" alt="img">
+                            </div>
+                            <div class="recent-text">
+                                <h2>Our recent project #1</h2>
+                                <div class="text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xxl-3 col-lg-3 col-md-3">
+                        <a href="#" class="recent-item">
+                            <div class="recent-project-img">
+                                <img src="assets/img/Mask Group 19.jpg" alt="img">
+                            </div>
+                            <div class="recent-text">
+                                <h2>Our recent project #4</h2>
+                                <div class="text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tabcontent" id="marketing">
+                <div class="row">
+                    <div class="col-xxl-3 col-lg-3 col-md-3">
+                        <a href="#" class="recent-item">
+                            <div class="recent-project-img">
+                                <img src="assets/img/Mask Group 19.jpg" alt="img">
+                            </div>
+                            <div class="recent-text">
+                                <h2>Our recent project #4</h2>
+                                <div class="text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tabcontent" id="design">
+                <div class="row">
+                    <div class="col-xxl-3 col-lg-3 col-md-3 ">
+                        <a href="#" class="recent-item">
+                            <div class="recent-project-img">
+                                <img src="assets/img/Mask Group 17.jpg" alt="img">
+                            </div>
+                            <div class="recent-text">
+                                <h2>Our recent project #1</h2>
+                                <div class="text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xxl-3 col-lg-3 col-md-3">
+                        <a href="#" class="recent-item">
+                            <div class="recent-project-img">
+                                <img src="assets/img/Mask Group 19.jpg" alt="img">
+                            </div>
+                            <div class="recent-text">
+                                <h2>Our recent project #4</h2>
+                                <div class="text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xxl-3 col-lg-3 col-md-3">
+                        <a href="#" class="recent-item">
+                            <div class="recent-project-img">
+                                <img src="assets/img/Mask Group 19.jpg" alt="img">
+                            </div>
+                            <div class="recent-text">
+                                <h2>Our recent project #4</h2>
+                                <div class="text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xxl-3 col-lg-3 col-md-3">
+                        <a href="#" class="recent-item">
+                            <div class="recent-project-img">
+                                <img src="assets/img/Mask Group 19.jpg" alt="img">
+                            </div>
+                            <div class="recent-text">
+                                <h2>Our recent project #4</h2>
+                                <div class="text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xxl-3 col-lg-3 col-md-3">
+                        <a href="#" class="recent-item">
+                            <div class="recent-project-img">
+                                <img src="assets/img/Mask Group 19.jpg" alt="img">
+                            </div>
+                            <div class="recent-text">
+                                <h2>Our recent project #4</h2>
+                                <div class="text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xxl-3 col-lg-3 col-md-3">
+                        <a href="#" class="recent-item">
+                            <div class="recent-project-img">
+                                <img src="assets/img/Mask Group 19.jpg" alt="img">
+                            </div>
+                            <div class="recent-text">
+                                <h2>Our recent project #4</h2>
+                                <div class="text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
     <section>
         <div class="advert-box">
             <div class="container">

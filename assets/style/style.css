@@ -685,21 +685,31 @@ header{
     align-items: center;
     justify-content: flex-start;
 }
-.projects-links .left-side-links li{
+/* .projects-links .left-side-links li{
     list-style: none;
     margin-right: 40px;
     margin-bottom: 40px;
-}
-.projects-links .left-side-links li a{
+} */
+.projects-links .left-side-links button{
     font-size: var(--font5);
     font-family: 'Lato';
     color: rgba(112, 112, 112, 0.7);
     transition: 0.4s;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    border: none;
+    background: transparent;
 }
-.projects-links .left-side-links li a.active-color,
-.projects-links .left-side-links li a:hover{
+.projects-links .left-side-links button.active-color,
+.projects-links .left-side-links button:hover{
     color: #1A1A1A;
 }
+.tabcontent {
+    display: none;
+    width: 100%;
+    border: none;
+  }
+
 .all-projects-link{
     font-size: var(--font7);
     color: #707070;
@@ -1233,19 +1243,19 @@ header{
     display: flex;
     align-items: center;
 }
-.team-list-links .list-links li{
-    margin-left: 40px;
-    list-style: none;
-}
-.team-list-links .list-links li a{
+
+.team-list-links .list-links button{
     font-size: var(--font5);
     line-height: 29px;
     color: rgba(26, 26, 26, 0.7);
     font-family: 'Lato';
     transition: 0.4s;
+    margin-left: 40px;
+    border: none;
+    background: transparent;
 }
-.team-list-links .list-links li:hover a,
-.team-list-links .list-links li.add-col a{
+.team-list-links .list-links button:hover,
+.team-list-links .list-links button.active-color {
     color: rgba(26, 26, 26, 1);
 }
 

@@ -50,3 +50,18 @@ $('.main-slider').slick({
   $(document).on('click', '.navigation nav li', function(){
     $(this).addClass('colored').siblings().removeClass('colored');
   })
+
+
+  function openPos(evt, positName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active-color", "");
+    }
+    document.getElementById(positName).style.display = "block";
+    evt.currentTarget.className += " active-color";
+  }

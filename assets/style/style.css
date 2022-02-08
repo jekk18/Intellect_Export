@@ -104,7 +104,7 @@ header{
     position: absolute;
     top: 55px;
     max-height: 0px;
-    left: -8%;
+    left: 0;
     width: auto;
     background: rgba(0, 0, 0, 0.7);
     display: flex;
@@ -246,19 +246,22 @@ header{
     height: 100%;
     background-color: #F5F5F5;
     position: absolute;
-    padding-left: 10px;
+    padding-left: 40px;
     font-size: var(--font7);
     font-weight: normal;
     font-family: 'Lato';
     overflow: hidden;
 }
-.search-box form a{
+.search-box form .search-form-box button{
+    border: none;
+}
+.search-box form button{
     position: absolute;
     left: 10px;
     color: #1A1A1A;
     transition: 0.4s;
 }
-.search-box form a span{
+.search-box form button span{
     color: #1A1A1A;
     transition: 0.4s;
 }
@@ -269,10 +272,8 @@ header{
     width: 2px;
     background-color: #fff;
 }
-.search-box form .search-form-box input:focus-visible{
-    z-index: 55;
-}
-.search-box a,
+
+.search-box button,
 .search-box .lang-box .lang a{
     font-size: var(--font7);
     font-weight: normal;
@@ -280,18 +281,21 @@ header{
     color: #fff;
     transition: 0.3s;
 }
-.search-box a span{
+.search-box button{
+    background-color: transparent;
+}
+.search-box button span{
     margin-right: 10px;
     color: #fff;
-    font-size: 22px;
+    font-size: 20px;
     transition: 0.3s;
 }
 .search-box a:hover {
     color: #28579E;
 }
-.search-box a:hover span{
+/* .search-box button:hover span{
     color: #28579E;
-}
+} */
 .search-box .lang-box{
     position: relative;
    

@@ -29,6 +29,10 @@ a{
 /* Home Page */
 
 /* Header */
+
+.burger{
+    display: none;
+}
 header{
     height: auto;
 }
@@ -679,7 +683,6 @@ header{
     width: 95%;
 }
 
-
 .project-person{
     height: 80px!important;
     text-align: center;
@@ -960,6 +963,7 @@ header{
     max-height: 52px;
     overflow: hidden;
     transition: 0.4s;
+    font-family: 'Lato';
     color: #727272;
     margin-top: 15px;
 }

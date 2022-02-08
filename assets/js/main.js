@@ -16,6 +16,30 @@ $('.main-slider').slick({
         prevArrow: false,
         responsive: [
           {
+            breakpoint: 1638,
+            settings: {
+              centerMode: true,
+              centerPadding: '90px',
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 1399,
+            settings: {
+              centerMode: true,
+              centerPadding: '90px',
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 1199,
+            settings: {
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          },
+          {
             breakpoint: 768,
             settings: {
               arrows: false,
@@ -51,7 +75,9 @@ $('.main-slider').slick({
     $(this).addClass('colored').siblings().removeClass('colored');
   })
 
-
+  $('.burger-lines').on('click', function(){
+    $('.burger').toggleClass('opens');
+  });
   function openPos(evt, positName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");

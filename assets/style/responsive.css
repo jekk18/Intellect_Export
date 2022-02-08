@@ -1,3 +1,521 @@
-@media (max-width: 1638px) {
+@media (max-width:1638px){
+    .slick-slide .project-img{
+        height: 301px;
+        width: 94.5%;
+    }
+    .slick-cloned .project-img{
+        height: 301px;
+        width: 94.5%;
+    }
+    .slick-active .project-img{
+        height: 345px;
+        width: 87%;
+    }
+    .slick-center .project-img{
+        height: 404px;
+        width: 95%;
+    }
+}
+
+@media (max-width: 1399px) {
+    :root{
+        --fontLarge:48px;
+        --nav-fonts:14px;
+        --font1:32px;
+        --font2:26px;
+        --font3:23px;
+        --font4:20px;
+        --font5:18px;
+        --font7:14px;
+    }
+/* Home Page */
+
+    .header-container, .header-container2{
+        height: 78px;
+    }
+    .head-cont{
+        align-items: center;
+        padding-top: 18px;
+    }
+    .head-cont .logo{
+        height: 44px;
+    }
+    .navigation{
+        padding-top: 8px;
+    }
+    .navigation nav li .nav-links{
+        font-size: var(--nav-fonts);
+        padding: 0 10px 20px 10px;
+    }
+    .navigation nav li:last-child .nav-links{
+        padding: 10px 20px;
+    }
+    .navigation nav li .nav-links::before{
+        bottom: 12px;
+    }
+    .header-bg-2 .navigation nav li .nav-links::before{
+        bottom: 12px;
+    }
+    .navigation nav li .submenu{
+        top: 40px;
+        padding:0 10px;
+    }
+    .navigation nav li .submenu a{
+        font-size: var(--nav-fonts);
+        margin-bottom: 10px;
+        line-height: 18px;
+    }
+    .search-box{
+        padding-top: 10px;
+    }
+    .search-box form .search-form-box{
+        height: 34px;
+    }
+    .search-box form input{
+        font-size: 14px;
+    }
+    .search-box form button{
+        padding-top: 3px;
+    }
+    .search-box form button span{
+        font-size: 18px;
+    }
+    .search-box .lang-box .lang a{
+        font-size: var(--font7);
+    }
+    .search-box .line, .header-bg .search-box .line{
+        margin: 0 15px;
+        height: 25px;
+    }
+
+    /* Main Banner */
     
+    .main-banner{
+        height: 636px;
+    }
+    .main-item{
+        height: 636px!important;
+    }
+    .main-item .main-text{
+        width: 710px;
+    }
+    .main-item .main-text h1{
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+    .main-item .main-text .text{
+        width: 65%;
+        line-height: 21px;
+        max-height: 64px;
+    }
+    /* Main Banner */
+
+    /* About Section */
+
+    .about-section{
+        padding: 50px 0;
+    }
+    .about-content{
+        padding: 0 35px;
+    }
+    .about-content .about-text h1{
+        line-height: 30px;
+    }
+    .about-content .about-text .text{
+        margin-top: 25px;
+        margin-bottom: 40px;
+    }
+    .card{
+        height: 170px;
+        margin-bottom: 25px;
+    }
+    .card span{
+        font-size: var(--fontLarge);
+        line-height: 57px;
+    }
+    .card-padding{
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+    /* About Section */
+
+    /* Projects */
+
+    .projects{
+        padding: 50px 0;
+    }
+    .project-text{
+        margin-bottom: 50px;
+    }
+    .project-text h1{
+        line-height: 22px;
+    }
+    .slick-slide .project-img{
+        height: 234px;
+        width: 94.5%;
+    }
+    .slick-cloned .project-img{
+        height: 234px;
+        width: 94.5%;
+    }
+    .slick-active .project-img{
+        height: 265px;
+        width: 87%;
+    }
+    .slick-center .project-img{
+        height: 307px;
+        width: 95%;
+    }
+    .project-person{
+        margin-top: 20px;
+        height: 62px!important;
+    }
+    .project-person h1{
+        margin-bottom: 10px;
+        line-height: 28px;
+    }
+    .project-person h2{
+        margin-bottom: 0;
+        line-height: 22px;
+    }
+    .members-link{
+        margin-top: 40px;
+    }
+    /* Projects */
+
+    /* Services */
+
+    .services{
+        padding: 50px 0 30px 0;
+    }
+    .services-text h1{
+        line-height: 32px;
+    }
+    .services-text{
+        margin-bottom: 50px;
+    }
+    .services-item{
+        height: 316px;
+        margin-bottom: 20px;
+        padding: 0 40px;
+    }
+    .services-item .white-box{
+        width: 89px;
+        height: 89px;
+    }
+    .services-item h2{
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-size: var(--font7);
+        line-height: 17px;
+    }
+    .services-item .text{
+        font-size: var(--font7);
+        line-height: 21px;
+    }
+    /* Services */
+
+    /* Recent Project */
+
+    .recent-projects{
+        padding: 50px 0 25px 0;
+    }
+    .recent-project-text h1{
+        line-height: 39px;
+        margin-bottom: 15px;
+    }
+    .recent-project-text{
+        margin-bottom: 50px;
+    }
+    .projects-links .left-side-links button{
+        margin-right: 25px;
+        margin-bottom: 25px;
+        line-height: 22px;
+    }
+    .recent-item{
+        margin-bottom: 25px;
+    }
+    .recent-item .recent-project-img{
+        height: 273px;
+        margin-bottom: 10px;
+    }
+    .recent-item .recent-text .text{
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 12px;
+    }
+    /* Recent Project */
+    /* Advert */
+
+    .advert-box{
+        padding: 60px 0;
+    }
+    .advert-item{
+        line-height: 35px;
+    }
+    /* Advert */
+    /* Footer */
+    .footer{
+        padding: 50px 0;
+    }
+    .footer-info a{
+        margin-bottom: 10px;
+        line-height: 18px;
+    }
+    .footer-logo{
+        width: 132px;
+        height: 112px;
+        margin-bottom: 25px;
+    }
+    .socials{
+        padding-left: 10px;
+    }
+    .social-icon{
+        margin-left: 15px;
+    }
+    .social-icon span{
+        font-size: 18px;
+    }
+    /* Footer */
+    /* Home Page */
+}
+
+@media (max-width:1199px) {
+    :root{
+        --fontLarge:42px;
+        --nav-fonts:12px;
+        --font1:28px;
+        --font2:22px;
+        --font3:20px;
+        --font4:18px;
+        --font5:16px;
+        --font7:12px;
+    }
+    .search-box form .search-form-box{
+        width: 160px;
+        height: 30px;
+    }
+    .search-box form input{
+        padding-left: 35px;
+    }
+    .search-box form button span{
+        font-size: 16px;
+    }
+    .navigation nav li{
+        margin: 0 8px;
+    }
+    .navigation nav li .nav-links{
+        padding: 0 7px 20px 7px;
+    }
+    .navigation nav li:last-child .nav-links{
+        padding: 7px 15px;
+    }
+    .navigation nav li .submenu a{
+        line-height: 16px;
+        margin-bottom: 8px;
+    }
+    .about-section{
+        padding: 40px 0;
+    }
+    .card-padding{
+        padding: 0 12px;
+    }
+    .card {
+        height: 155px;
+        margin-bottom: 25px;
+    }
+    .about-content .about-text .text{
+        line-height: 24px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    .projects{
+        padding: 40px 20px;
+    }
+    .project-text{
+        margin-bottom: 40px;
+    }
+    .project-text .text{
+        line-height: 22px;
+    }
+    .slick-slide .project-img{
+        height: 217px;
+        width: 94.5%;
+    }
+    .slick-cloned .project-img{
+        height: 217px;
+        width: 94.5%;
+    }
+    .slick-active .project-img{
+        height: 250px;
+        width: 87%;
+    }
+    .slick-center .project-img{
+        height: 277px;
+        width: 95%;
+    }
+    .project-person{
+        margin-top: 15px;
+        height: 55px!important;
+    }
+    .project-person h1{
+        line-height: 26px;
+        margin-bottom: 8px;
+    }
+    .project-person h3{
+        line-height: 18px;
+    }
+    .members-link{
+        margin-top: 30px;
+    }
+    .services{
+        padding: 40px 0 20px 0;
+    }
+    .services-text h1{
+        line-height: 26px;
+    }
+    .services-text{
+        margin-bottom: 40px;
+    }
+    .services-item{
+        height: 296px;
+    }
+    .recent-projects{
+        padding: 40px 0 20px 0;
+    }
+    .recent-project-text h1{
+        line-height: 36px;
+    }
+    .recent-project-text{
+        margin-bottom: 40px;
+    }
+    .recent-item .recent-project-img{
+        height: 220px;
+    }
+    .recent-item{
+        margin-bottom: 20px;
+    }
+    .recent-item .recent-text .text{
+        line-height: 22px;
+        max-height: 48px;
+    }
+    .advert-box{
+        padding: 50px 0;
+    }
+    .footer{
+        padding: 40px 0;
+    }
+    .footer-logo {
+        width: 130px;
+        height: 106px;
+        margin-bottom: 20px;
+    }
+    .footer-info h4{
+        margin-bottom: 18px;
+    }
+    .footer-info a{
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width:991px){
+    /* Home Page */
+    .burger{
+        display: block;
+        position: relative;
+    }
+    .burger-lines{
+        width: 30px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        overflow: hidden;
+        height: 30px;
+        z-index: 5;
+        position: relative;
+    }
+    .burg-line{
+        width: 100%;
+        height: 4px;
+        background-color: #fff;
+        border-radius: 4px;
+        transition: 0.4s;
+    }
+    .header-bg .burg-line{
+        width: 100%;
+        height: 4px;
+        background-color: #1A1A1A;
+        border-radius: 4px;
+        transition: 0.4s;
+    }
+    .burg-line:nth-child(2){
+        margin:  4px 0;
+    }
+    .opens .burger-lines .burg-line:nth-child(2){
+        transform: translateX(35px);
+        background-color: #1A1A1A;
+    }
+    .opens .burger-lines .burg-line:first-child{
+        transform: rotate(45deg) translate(10px, 10px);
+        background-color: #1A1A1A;
+    }
+    .opens .burger-lines .burg-line:last-child{
+        transform: rotate(-45deg) translate(1px, -2px);
+        background-color: #1A1A1A;
+    }
+    .burg-menu{
+        width: 400px;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: -20px;
+        right: -1200px;
+        z-index: 1;
+    }
+    .opens .burg-menu{
+        right: -140px;
+        width: 992px;
+        transition: 0s;
+    }
+    .burger-links{
+        width: 0px;
+        height: 100%;
+        background: #fff;
+        float: right;
+        transition: 0.5s;
+    }
+    .opens .burg-menu .burger-links{
+        width: 520px;
+    }
+    
+   
+   
+
+
+
+
+
+
+
+
+    
+    .header-container, .header-container2{
+        height: 70px;
+    }
+    .navigation, .search-box{
+        display: none;
+    }
+    .head-cont {
+        padding-top: 16px;
+    }
+    .head-cont .logo{
+        height: 37px;
+    }
+    .main-banner{
+        height: 447px;
+    }
+    .main-item{
+        height: 447px!important;
+    }
+        /* Home Page */
 }

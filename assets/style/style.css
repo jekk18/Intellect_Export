@@ -22,6 +22,7 @@ a{
     --font7:20px;
     --font8: 22px;
     --font9:17px;
+    --nav-fonts:20px;
 }
 
 
@@ -67,9 +68,11 @@ header{
 .head-cont .logo a:last-child{
     display: none;
 }
-.navigation,
-.search-box{
+.navigation{
     padding-top: 23px;
+}
+.search-box{
+    padding-top: 18px;
 }
 .navigation nav{
     display: flex;
@@ -89,7 +92,7 @@ header{
     /* border-radius: 10px; */
     /* color: #D0D0D0; */
     color: #FFFFFF;
-    font-size: var(--font7);
+    font-size: var(--nav-fonts);
     font-family: 'Lato';
     font-weight: bold;
     transition: 0.5s;
@@ -101,31 +104,35 @@ header{
     position: absolute;
     top: 55px;
     max-height: 0px;
-    left: -100px;
-    width: 350px;
+    left: -8%;
+    width: auto;
     background: rgba(0, 0, 0, 0.7);
     display: flex;
     flex-wrap: wrap;
-    /* padding: 20px; */
+    padding:0 20px;
     overflow: hidden;
     transition: 0.3s;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
 }
 .navigation nav li .submenu a{
     color: #FFFFFF;
-    font-size: var(--font7);
+    font-size: var(--nav-fonts);
     font-family: 'Lato';
     font-weight: bold;
     transition: 0.4s;
     margin-bottom: 15px;
-    margin-right: 20px;
-    width: 40%;
+    /* margin-right: 20px; */
+    width: 100%;
 }
 .navigation nav li:hover .submenu{
     max-height: 250px;
     padding: 20px;
     /* bottom: -260px; */
 }
-
+.navigation nav li .submenu a:hover{
+    opacity: 0.6;
+}
 /* Submenu */
 .navigation nav li .nav-links::before{
     position: absolute;
@@ -137,6 +144,19 @@ header{
     background: #fff;
     transition: 0.4s;
     border-radius: 10px;
+}
+.header-bg .navigation nav li .submenu a{
+    color: #1A1A1A;
+}
+.header-bg .navigation nav li .submenu{
+    background-color: #fff;
+}
+.header-bg-2 .navigation nav li .submenu a{
+    color: #1A1A1A;
+}
+
+.header-bg-2 .navigation nav li .submenu{
+    background-color: #fff;
 }
 .header-bg-2 .navigation nav li .nav-links{
     color: #D0D0D0; 
@@ -204,10 +224,53 @@ header{
 
 .search-box{
     display: flex;
+    align-items: center;
+}
+.search-box form{
+    margin-top: 0;
+}
+.search-box form .search-form-box{
+    margin: 0;
+    position: relative;
+    width: 180px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.search-box form input{
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5F5;
+    position: absolute;
+    padding-left: 10px;
+    font-size: var(--font7);
+    font-weight: normal;
+    font-family: 'Lato';
+    overflow: hidden;
+}
+.search-box form a{
+    position: absolute;
+    left: 10px;
+    color: #1A1A1A;
+    transition: 0.4s;
+}
+.search-box form a span{
+    color: #1A1A1A;
+    transition: 0.4s;
 }
 .search-box .line{
     margin: 0 20px;
     color: #fff;
+    height: 30px;
+    width: 2px;
+    background-color: #fff;
+}
+.search-box form .search-form-box input:focus-visible{
+    z-index: 55;
 }
 .search-box a,
 .search-box .lang-box .lang a{
@@ -244,7 +307,7 @@ header{
 }
 .search-box .lang-box .lang a{
     transition: 0.3s;
-    height: 23px;
+    /* height: 23px; */
 }
 .search-box .lang-box .lang a:hover{
     color: #28579E;
@@ -290,6 +353,13 @@ header{
 .header-bg .navigation nav li a.active{
     border: 2px solid #1A1A1A;
 } */
+.header-bg .search-box .line{
+    margin: 0 20px;
+    color: #fff;
+    height: 30px;
+    width: 2px;
+    background-color: #1A1A1A;
+}
 .header-bg .search-box a,
 .header-bg .search-box a span,
 .header-bg .search-box  .line,
@@ -302,7 +372,9 @@ header{
 .header-bg-2 .search-box .lang-box .lang a{
     color: #1A1A1A; 
 }
-
+.header-bg-2 .search-box  .line{
+    background-color: #1A1A1A;
+}
 .header-bg .search-box a:hover,
 .header-bg-2 .search-box a:hover {
     color: #28579E;

@@ -40,6 +40,14 @@ $('.main-slider').slick({
             }
           },
           {
+            breakpoint: 991,
+            settings: {
+              centerMode: true,
+              centerPadding: '60px',
+              slidesToShow: 3
+            }
+          },
+          {
             breakpoint: 768,
             settings: {
               arrows: false,
@@ -49,11 +57,11 @@ $('.main-slider').slick({
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 574,
             settings: {
               arrows: false,
               centerMode: true,
-              centerPadding: '40px',
+              centerPadding: '90px',
               slidesToShow: 1
             }
           }
@@ -91,3 +99,18 @@ $('.main-slider').slick({
     document.getElementById(positName).style.display = "block";
     evt.currentTarget.className += " active-color";
   }
+
+  $(document).on('click', '.burger-links ul li span', function(){
+    if (!$(this).closest('.burger-links ul li').hasClass('burger-link-active')) {
+      $('.burger-links ul li').removeClass('burger-link-active');    
+    }
+    $(this).closest('.burger-links ul li').toggleClass('burger-link-active'); 
+  });
+
+  $(document).ready(function() {
+    var liLoop = document.getElementsByClassName("burger-submenu");
+    for(var i = 0; i < liLoop.length; i++){
+        $(liLoop[i]).closest('.burger-links ul li').addClass("arrow-hide"); 
+    }
+
+ });

@@ -25,7 +25,39 @@ a{
     --nav-fonts:20px;
 }
 
+/* Pagination */
 
+.pagination{
+    margin-top: -30px;
+    width: 100%;
+    padding-bottom: 100px;
+}
+.pagination-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+    gap: 25px;
+}
+.pagination-box .pagination-arrow:first-child{
+    transform: rotate(180deg);
+}
+.pagination-box li{
+    list-style: none;
+}
+.pagination-box  li a{
+    font-size: 32px;
+    font-weight: bold;
+    color: rgba(26, 26, 26, 0.4);
+    font-family: 'Lato';
+    transition: 0.4s;
+}
+.pagination-box li:hover a,
+.pagination-box li.pagination-color a{
+    color: rgba(26, 26, 26, 1);
+}
+/* Pagination */
 /* Home Page */
 
 /* Header */
@@ -91,10 +123,6 @@ header{
     /* padding-bottom: 30px; */
 }
 .navigation nav li .nav-links{
-    /* padding: 14px 30px; */
-    /* border: 2px solid transparent; */
-    /* border-radius: 10px; */
-    /* color: #D0D0D0; */
     color: #FFFFFF;
     font-size: var(--nav-fonts);
     font-family: 'Lato';
@@ -232,15 +260,17 @@ header{
 }
 .search-box form{
     margin-top: 0;
+    /* max-height: ; */
 }
 .search-box form .search-form-box{
     margin: 0;
     position: relative;
-    width: 180px;
+    width: 100px;
     height: 42px;
     display: flex;
     align-items: center;
     overflow: hidden;
+    transition: 0.4s;
 }
 .search-box form input{
     border: none;
@@ -248,14 +278,28 @@ header{
     border-radius: 7px;
     width: 100%;
     height: 100%;
-    background-color: #F5F5F5;
-    position: absolute;
+    background-color: transparent;
+    position: relative;
     padding-left: 40px;
     font-size: var(--font7);
     font-weight: normal;
     font-family: 'Lato';
     overflow: hidden;
+    transition: 0.4s;
 }
+.search-box form input::placeholder{
+    color: #fff;
+}
+.search-box form .search-form-box:focus-within input::placeholder{
+    color: #1A1A1A;
+}
+.search-box form .search-form-box:focus-within {
+    width: 180px;
+}
+.search-box form .search-form-box:focus-within input{
+   background-color: #F5F5F5;
+}
+
 .search-box form .search-form-box button{
     border: none;
 }
@@ -266,9 +310,12 @@ header{
     transition: 0.4s;
 }
 .search-box form button span{
-    color: #1A1A1A;
+    color: #fff;
     transition: 0.4s;
 }
+.search-box form .search-form-box:focus-within button span{
+    color: #1A1A1A;
+ }
 .search-box .line{
     margin: 0 20px;
     color: #fff;
@@ -336,7 +383,14 @@ header{
 .search-box .lang-box:hover i{
     transform: rotate(-180deg);
 }
-
+.header-bg .search-box form input::placeholder,
+.header-bg-2 .search-box form input::placeholder{
+    color: #1A1A1A;
+}
+.header-bg .search-box form button span,
+.header-bg-2 .search-box form button span{
+    color: #1A1A1A;
+}
 .header-bg, .header-bg-2{
     background: #fff;
     /* box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5); */
@@ -619,8 +673,10 @@ header{
 
 /* Project Slider */
 
-.projects{
+.projects {
     padding: 100px 0;
+    position: relative;
+    height: 1066px;
 }
 .project-text-side{
     width: 100%;
@@ -709,6 +765,8 @@ header{
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    position: absolute;
+    bottom: 100px;
 }
 .projects .members-link .more-link{
     color: #fff;
@@ -784,10 +842,20 @@ header{
     width: 65%;
     height: 65%;
     object-fit: cover;
+    transition: 0.4s;
 }
 .services-item .white-box span{
   font-size: 40px;
   transition: 0.4s;
+}
+.services-item .white-box img:last-child{
+    display: none;
+}
+.services-item:hover .white-box img:first-child{
+    display: none;
+}
+.services-item:hover .white-box img:last-child{
+    display: block;
 }
 .services-item h2{
     font-size: var(--font6);
@@ -1396,7 +1464,7 @@ header{
     width: 100%;
 }
 .service-box-right-img .service-box-img{
-    width: 358px;
+    width: 100%;
     height: 348px;
     border-radius: 20px;
     transition: 0.4s;

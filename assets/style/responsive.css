@@ -37,6 +37,9 @@
     .recent-item .recent-project-img{
         height: 330px;
     }
+    .projects{
+        height: 965px;
+    }
 }
 
 @media (max-width: 1399px) {
@@ -81,6 +84,7 @@
     .navigation nav li .submenu{
         top: 40px;
         padding:0 10px;
+        max-width: 200px;
     }
     .navigation nav li .submenu a{
         font-size: var(--nav-fonts);
@@ -90,8 +94,10 @@
     .search-box{
         padding-top: 10px;
     }
+    
     .search-box form .search-form-box{
         height: 34px;
+        width: 83px;
     }
     .search-box form input{
         font-size: 14px;
@@ -165,6 +171,10 @@
 
     .projects{
         padding: 50px 0;
+        height: 700px;
+    }
+    .members-link{
+        bottom: 50px;
     }
     .project-text{
         margin-bottom: 50px;
@@ -300,6 +310,63 @@
     }
     /* Footer */
     /* Home Page */
+    /*  About Page */
+    .home-banner{
+        margin-top: 78px;
+        height: 213px;
+    }
+    .bandcamp{
+        margin-top: 20px;
+    }
+    .bandcamp ul li a{
+        font-size: 20px;
+    }
+    .text-section{
+        padding: 20px 0 0 0;
+    }
+    .border-first:first-child .text-area .title-text{
+        /* margin-bottom: 10px; */
+        padding-top: 10px;
+    }
+    .border-first:first-child .text-area .title-text h1{
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+    .text-area .title-text h1{
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+    .text-area .text{
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .right-side-img{
+        padding-right: 0;
+    }
+    .right-side-img .right-img{
+        width: 211px;
+        height: 198px;
+    }
+    .p-t-2{
+        padding: 50px 0 25px 0;
+    }
+    /*  About Page */
+    /* Project Page */
+
+    .team-list-links{
+        margin-bottom: 30px;
+    }
+    .p-t{
+        padding-top: 0;
+    }
+    .pagination-box li a{
+        font-size: 28px;
+    }
+    .pagination{
+        padding-bottom: 50px;
+        margin-top: 0;
+    }
+    /* Project Page */
 }
 
 @media (max-width:1199px) {
@@ -314,8 +381,11 @@
         --font7:12px;
     }
     .search-box form .search-form-box{
-        width: 160px;
+        width: 78px;
         height: 30px;
+    }
+    .search-box form .search-form-box:focus-within {
+        width: 160px;
     }
     .search-box form input{
         padding-left: 35px;
@@ -336,6 +406,9 @@
         line-height: 16px;
         margin-bottom: 8px;
     }
+    .search-box .lang-box .lang{
+        padding-top: 5px;
+    }
     .about-section{
         padding: 40px 0;
     }
@@ -353,6 +426,10 @@
     }
     .projects{
         padding: 40px 0;
+        height: 615px;
+    }
+    .members-link{
+        bottom: 40px;
     }
     .project-text{
         margin-bottom: 40px;
@@ -438,6 +515,54 @@
     .footer-info a{
         margin-bottom: 8px;
     }
+    /*  About Page */
+    .p-t-2{
+        padding: 40px 0 20px 0;
+    }
+    .card{
+        margin-bottom: 20px;
+    }
+    .card span:last-child{
+        line-height: 40px;
+    }
+    .text-area .text {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .text-area{
+        margin-bottom: 30px;
+    }
+    .right-side-img .right-img {
+        width: 170px;
+        height: 160px;
+        margin-bottom: 30px;
+    }
+    .text-area .title-text h1{
+        line-height: 28px;
+    }
+    .card span:first-child{
+        line-height: 50px;
+    }
+    .card span:last-child{
+        line-height: 36px;
+    }
+    /* About Page */
+    /* Project Page */
+
+    .team-list-links{
+        margin-bottom: 20px;
+    }
+    .p-t{
+        padding-top: 0;
+    }
+    .pagination-box li a{
+        font-size: 24px;
+    }
+    .pagination{
+        padding-bottom: 40px;
+        margin-top: 0;
+    }
+    /* Project Page */
 }
 
 @media (max-width:991px){
@@ -462,7 +587,8 @@
         flex-direction: column;
         cursor: pointer;
         overflow: hidden;
-        height: 30px;
+        height: 35px;
+        padding-top: 5px;
         z-index: 5;
         position: relative;
     }
@@ -714,6 +840,10 @@
 
     .projects{
         padding: 35px 0;
+        height: 555px;
+    }
+    .more-link{
+        bottom: 35px;
     }
     .project-text h1{
         margin-bottom: 10px;
@@ -880,6 +1010,54 @@
     }
     /* Footer */
         /* Home Page */
+      /* About Page */
+
+      .home-banner{
+          margin-top: 70px;
+          height: 150px;
+      }
+      .bandcamp ul li a{
+          font-size: 16px;
+      }
+      .text-area .text{
+          font-size: 14px;
+          line-height: 20px;
+      }
+     
+      .border-first:first-child .text-area .title-text {
+        padding-top: 5px;
+    }
+    .border-first:first-child .text-area .title-text h1{
+        line-height: 24px;
+    }
+    .right-side-img .right-img {
+        width: 140px;
+        height: 130px;
+    }
+    .p-t-2{
+        padding: 35px 0 15px 0;
+    }
+    /* About Page */
+    /* Project Page */
+
+    .p-t{
+        padding-top: 0;
+    }
+    .pagination-box li a{
+        font-size: 20px;
+    }
+    .pagination{
+        padding-bottom: 35px;
+        margin-top: 0;
+    }
+    .team-list-links .list-links button{
+        margin-left: 20px;
+        font-size: 14px;
+    }
+    .recent-item .img-2{
+        height: 230px;
+    }
+    /* Project Page */
 }
 
 
@@ -907,6 +1085,13 @@
     .slick-center .project-img{
         height: 255px;
         width: 95%;
+    }
+    .projects{
+        padding: 35px 0;
+        height: 530px;
+    }
+    .more-link{
+        bottom: 35px;
     }
 }
 @media (max-width: 768px){
@@ -1030,6 +1215,10 @@
     }
     .projects{
         padding: 20px 0;
+        height: 382px;
+    }
+    .members-link{
+        bottom: 20px;
     }
     .project-text .text{
         line-height: 15px;
@@ -1155,6 +1344,74 @@
         margin-left: 0;
     }
     /* Home Page */   
+    /* About Page */
+
+    .bandcamp ul li a{
+        font-size: 12px;
+    }
+    .d-arrow-b{
+        font-size: 14px;
+    }
+    .bandcamp ul li{
+        line-height: 18px;
+    }
+    .hidden-img{
+        display: none;
+    }
+    .text-area{
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-area .text{
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+    }
+    .text-area .title-text h1{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .p-t-2{
+        padding: 20px 0 8px 0;
+    }
+    /* About Page */
+    /* Project page */
+
+    .p-t{
+        padding: 0 0 5px 0;
+    }
+    .team-list-links h1{
+        margin-bottom: 20px;
+        line-height: 20px;
+        font-size: 16px;
+    }
+    .team-list-links{
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    .team-list-links .list-links{
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .team-list-links .list-links button{
+        line-height: 17px;
+        font-size: 14px;
+        margin: 0;
+    }
+    .pagination {
+        margin-top: 0px;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .pagination-box{
+        gap: 10px;
+    }
+    .pagination-box li a{
+        font-size: 16px;
+    }
+    /* Project Page/ */
 }
 
 

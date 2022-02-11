@@ -40,6 +40,13 @@
     .projects{
         height: 965px;
     }
+    /* Project Detail Page */
+
+    .detail-image{
+        height: 390px;
+    }
+
+    /* Project Detail Page */
 }
 
 @media (max-width: 1399px) {
@@ -367,6 +374,37 @@
         margin-top: 0;
     }
     /* Project Page */
+     /* Project Detail Page */
+
+     .p-r-1{
+        padding-right: calc(var(--bs-gutter-x) * 0.5);;
+     }
+     .p-r-2{
+        padding-right: calc(var(--bs-gutter-x) * 0.5);;
+    }
+    .detail-text-area h1{
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+    .detail-text-area h2{
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    .detail-text-area .text{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .detail-image{
+        padding: 0;
+        height: 361px;
+        margin-bottom: 25px;
+    }
+    .p-tt-2{
+        padding: 25px 0 25px 0;
+    }
+    /* Project Detail Page */
 }
 
 @media (max-width:1199px) {
@@ -563,6 +601,21 @@
         margin-top: 0;
     }
     /* Project Page */
+
+    /* Project Detail Page */
+    .detail-image{
+        padding: 0;
+        height: 300px;
+        margin-bottom: 25px;
+    }
+    .detail-text-area .text{
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+    .p-tt-2{
+        padding: 15px 0 20px 0;
+    }
+    /* Project Detail Page */
 }
 
 @media (max-width:991px){
@@ -1016,6 +1069,14 @@
           margin-top: 70px;
           height: 150px;
       }
+      .bandcamp ul{
+          flex-wrap: wrap;
+          gap: 10px;
+      }
+      .bandcamp ul li{
+          margin: 0;
+          line-height: 14px;
+      }
       .bandcamp ul li a{
           font-size: 16px;
       }
@@ -1057,7 +1118,27 @@
     .recent-item .img-2{
         height: 230px;
     }
-    /* Project Page */
+    .detail-image{
+        height: 240px;
+    }
+    .detail-text-area h1{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .detail-text-area h2{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .detail-text-area .text{
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 20px;
+    }
+    .detail-content{
+        padding: 20px 0 0 0;
+        overflow-x: hidden;
+    }
+    /* Project DET Page */
 }
 
 
@@ -1412,6 +1493,31 @@
         font-size: 16px;
     }
     /* Project Page/ */
+     /* Project  DET Page */
+
+    .detail-image{
+        height: 213px;
+        width: 214px;
+        margin-bottom: 0;
+        border-radius: 10px;
+    }
+    .detail-image a img{
+        border-radius: 10px!important;
+    }
+    .detail-content{
+        padding: 20px 0 0 0;
+        overflow-x: hidden;
+    }
+    .row-slider-mobile{
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        padding-bottom: 20px;
+    }
+    .col-slider{
+        width: fit-content;
+        padding: 0 6px;
+    }
+    /* Project DET Page */
 }
 
 

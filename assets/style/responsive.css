@@ -47,6 +47,13 @@
     }
 
     /* Project Detail Page */
+    /* Services Page */
+
+    .service-box-right-img .service-box-img{
+        height: 315px;
+    }
+
+    /* Services Page */
 }
 
 @media (max-width: 1399px) {
@@ -405,6 +412,77 @@
         padding: 25px 0 25px 0;
     }
     /* Project Detail Page */
+     /* Services Page */
+
+     .service-box-right-img .service-box-img{
+        height: 250px;
+    }
+    .service-text-box h1{
+        line-height: 32px;
+        margin-bottom: 15px;
+    }
+    .img-icon{
+        width: 59px;
+        height: 59px;
+        border-radius: 7px;
+    }
+    .service-text-box .text{
+        font-size: 20px;
+        line-height: 30px;
+        max-height: 120px;
+    }
+    .service-text-box ul{
+        margin-bottom: 25px;
+    }
+    .service-text-box ul li a{
+        line-height: 24px;
+    }
+    .service-text-box .booking-service{
+        font-size: 14px;
+    }
+    /* Services Page */
+    /* TEAM PAGE */
+    .team-members-list{
+        padding: 30px 0 0 0 ;
+    }
+    .team-members .members-img{
+        height: 235px;
+        border-radius: 10px;
+    }
+    .team-members .members-img img{
+        border-radius: 10px;
+    }
+    .m-b-2{
+        margin-bottom: 20px;
+    }
+    .right-side-img .img-r{
+        margin-bottom: 20px;
+    }
+    /* .add-p-r{
+        padding: 0;
+    } */
+    .team-members{
+        padding-right: 11px;
+    }
+    .team-members .members-info h1{
+        font-size: 16px;
+        line-height: 18px;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+    .team-members .members-info h2{
+        font-size: 14px;
+    }
+    .team-members .members-info span{
+        /* width: 20px; */
+        height: 17px;
+    }
+    .team-members .members-info span img{
+        width: 100%;
+        height: 100%;
+    }
+    /* TEAM PAGE */
 }
 
 @media (max-width:1199px) {
@@ -616,6 +694,45 @@
         padding: 15px 0 20px 0;
     }
     /* Project Detail Page */
+     /* Services Page */
+     .services-boxes{
+         padding: 40px 0 40px 0;
+     }
+     .service-box-right-img .service-box-img{
+        height: 230px;
+    }
+    .service-text-box h1{
+        line-height: 32px;
+        margin-bottom: 15px;
+    }
+    .img-icon{
+        width: 59px;
+        height: 59px;
+        border-radius: 7px;
+    }
+    .service-text-box .text{
+        font-size: 18px;
+        line-height: 24px;
+        max-height: 100px;
+        margin-bottom: 15px;
+    }
+    .service-text-box ul{
+        margin-bottom: 25px;
+    }
+    .service-text-box ul li a{
+        line-height: 24px;
+    }
+    .service-text-box .booking-service{
+        font-size: 14px;
+    }
+    /* Services Page */
+    /* TEAM PAGE */
+
+    .team-members .members-img{
+        height: 210px;
+    }
+
+    /* TEAM PAGE */
 }
 
 @media (max-width:991px){
@@ -1139,6 +1256,70 @@
         overflow-x: hidden;
     }
     /* Project DET Page */
+         /* Services Page */
+         .services-boxes{
+            padding: 35px 0 35px 0;
+        }
+        .service-box-right-img .service-box-img{
+           height: 165px;
+           border-radius: 10px;
+       }
+       .service-box-right-img .service-box-img img{
+           border-radius: 10px;
+       }
+       .service-text-box h1{
+           line-height: 24px;
+           margin-bottom: 10px;
+       }
+       .img-icon{
+           width: 39px;
+           height: 39px;
+           border-radius: 7px;
+           margin-bottom: 10px;
+       }
+       .service-text-box .text{
+           font-size: 14px;
+           line-height: 18px;
+           max-height: 100px;
+           margin-bottom: 10px;
+       }
+       .service-text-box ul{
+           margin-bottom: 15px;
+           padding-left: 5px;
+       }
+       .service-text-box ul li{
+           margin: 0 15px;
+       }
+       .service-text-box ul li a{
+           line-height: 16px;
+       }
+       .service-text-box .booking-service{
+           font-size: 12px;
+           border-radius: 4px;
+           padding: 8px;
+       }
+       /* Services Page */
+       /* TEAM PAGE */
+       .team-members{
+           padding-right: 0;
+           margin-bottom: 24px;
+       }
+       .team-members .members-img{
+           height: 156px;
+       }
+       .team-list-links .list-links button{
+           line-height: 17px;
+       }
+       .right-side-img .img-r{
+        margin-bottom: 20px;
+       }
+       .text-area{
+           margin-bottom: 20px;
+       }
+       .team-members-list{
+           padding: 20px 0 15px 0;
+       }
+       /* TEAM PAGE */
 }
 
 
@@ -1518,6 +1699,76 @@
         padding: 0 6px;
     }
     /* Project DET Page */
+    /* Services Page */
+    .services-boxes{
+        padding: 20px 0 20px 0;
+    }
+    .service-text-box{
+        align-items: center;
+    }
+   .service-text-box h1{
+       line-height: 22px;
+       margin-bottom: 15px;
+   }
+   .img-icon{
+       width: 42px;
+       height: 42px;
+       margin-bottom: 15px;
+   }
+   .service-text-box .text{
+       font-size: 12px;
+       line-height: 18px;
+       max-height: 106px;
+       margin-bottom: 15px;
+       padding-right: 0;
+       text-align: center;
+   }
+   .service-text-box ul{
+       margin-bottom: 15px;
+       padding-left: 5px;
+   }
+   .service-text-box ul li{
+       margin: 0 15px;
+       line-height: 10px;
+   }
+   .service-text-box ul li a{
+       line-height: 16px;
+   }
+   .service-text-box .booking-service{
+       font-size: 12px;
+       border-radius: 4px;
+       padding: 8px 17px;
+   }
+   .hide-service-img{
+       display: none;
+   }
+   /* Services Page */
+    /* TEAM PAGE */
+    .team-members{
+        padding-right: 0;
+        margin-bottom: 24px;
+    }
+    .team-members .members-img{
+        height: 147px;
+    }
+    .text-area{
+        margin-bottom: 10px;
+    }
+    .team-members-list{
+        padding: 10px 0 0 0;
+    }
+    .team-members .members-info h1{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .team-members .members-info h2{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .team-members .members-info span{
+        height: 15px;
+    }
+    /* TEAM PAGE */
 }
 
 

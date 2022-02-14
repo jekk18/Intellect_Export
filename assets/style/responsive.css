@@ -45,15 +45,33 @@
     .detail-image{
         height: 390px;
     }
-
     /* Project Detail Page */
     /* Services Page */
 
     .service-box-right-img .service-box-img{
         height: 315px;
     }
-
     /* Services Page */
+    /* TEAM DET */
+
+    .right-side-img .team-right-img{
+        width: 350px;
+        height: 350px
+    }
+    .person-box h1{
+        font-size: 40px;
+    }
+
+    /* TEAM DET */
+    /* CONTACT PAGE */
+
+    .contact-box .contact-links{
+        gap: 20px;
+    }
+    .contact-box .contact-links span{
+        margin-bottom: 0;
+    }
+    /* CONTACT PAGE */
 }
 
 @media (max-width: 1399px) {
@@ -483,6 +501,85 @@
         height: 100%;
     }
     /* TEAM PAGE */
+    /* TEAM DET */
+    .person-box h1{
+        font-size: 36px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+    .right-side-img .team-right-img{
+        width: 296px;
+        height: 296px;
+        border-radius: 10px;
+    }
+    .right-side-img .team-right-img img{
+        border-radius: 10px;
+    }
+    .person-info{
+        padding: 30px 0 0 0;
+    }
+    .person-box .person-special ul li{
+        margin-right: 35px;
+    }
+    .person-box .person-special .person-contact-link {
+        padding: 9px 22px;
+        font-size: 16px;
+    }
+    .person-info-text{
+        margin-top: 50px;
+        padding-right: 0;
+    }
+    .person-info-text h3{
+        font-size: 22px;
+        line-height: 30px;  
+        margin-bottom: 15px;
+        padding-right: 16%;
+    }
+    .person-info-text .text{
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .person-info-text a{
+        font-size: 18px;
+    }
+    .personal-projects{
+        margin-top: 25px;
+    }
+    .personal-projects-list li a{
+        font-size: 20px;
+    }
+    /* TEAM DET */
+    /* Contact Page */
+
+    .contact-box h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .contact-box .contact-links span{
+        line-height: 22px;
+    }
+    .right-img-contact {
+        margin-top: 40px;
+        width: 167px;
+        height: 167px;
+    }
+    .map-side{
+        padding: 0 0 60px 0;
+    }
+    .contact-form{
+        padding: 0 0 80px 0;
+    }
+    .map-bg{
+        height: 315px;
+    }
+    .map-bg-2{
+        height: 270px;
+    }
+    .map-box{
+        padding: 50px;
+        height: 525px;
+    }
+    /* Contact Page */
 }
 
 @media (max-width:1199px) {
@@ -731,8 +828,80 @@
     .team-members .members-img{
         height: 210px;
     }
-
     /* TEAM PAGE */
+
+     /* TEAM DET */
+     .person-box h1{
+        font-size: 28px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .right-side-img .team-right-img{
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+    }
+    .right-side-img .team-right-img img{
+        border-radius: 10px;
+    }
+    .person-info{
+        padding: 20px 0 0 0;
+    }
+    .person-box .person-special ul li{
+        margin-right: 35px;
+    }
+    .person-box .person-special .person-contact-link {
+        padding: 9px 22px;
+        font-size: 16px;
+    }
+    .person-info-text{
+        margin-top: 30px;
+        padding-right: 0;
+    }
+    .person-info-text h3{
+        font-size: 18px;
+        line-height: 26px;  
+        margin-bottom: 15px;
+        padding-right: 16%;
+    }
+    .person-info-text .text{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .person-info-text a{
+        font-size: 16px;
+    }
+    .personal-projects{
+        margin-top: 25px;
+    }
+    .personal-projects-list li a{
+        font-size: 18px;
+    }
+    /* TEAM DET */
+    /* Contact Page */
+    .map-side{
+        padding: 0 0 60px 0;
+    }
+    .contact-form{
+        padding: 0 0 60px 0;
+    }
+    .contact{
+        padding-bottom: 60px;
+    }
+    .map-bg{
+        height: 280px;
+    }
+    .map-bg-2{
+        height: 200px;
+    }
+    .map-box{
+        padding: 40px;
+        height: 425px;
+    }
+    .form-box form textarea{
+        height: 160px;
+    }
+    /* Contact Page */
 }
 
 @media (max-width:991px){
@@ -1320,6 +1489,167 @@
            padding: 20px 0 15px 0;
        }
        /* TEAM PAGE */
+          /* TEAM DET */
+     .person-box h1{
+        font-size: 24px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    .right-side-img .team-right-img{
+        width: 197px;
+        height: 197px;
+        border-radius: 10px;
+    }
+    .right-side-img .team-right-img img{
+        border-radius: 10px;
+    }
+    .person-info{
+        padding: 20px 0 0 0;
+    }
+    .person-box .person-special ul{
+        margin-bottom: 10px;
+    }
+    .person-box .person-special ul li{
+        margin-right: 35px;
+        line-height: 18px;
+    }
+    .person-box .person-special .person-contact-link {
+        padding: 5px 13px;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    .person-info-text{
+        margin-top: 30px;
+        padding-right: 0;
+    }
+    .person-info-text h3{
+        font-size: 14px;
+        line-height: 22px;  
+        margin-bottom: 10px;
+    }
+    .person-info-text .text{
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    .person-info-text a{
+        font-size: 14px;
+    }
+    .personal-projects{
+        margin-top: 20px;
+    }
+    .personal-projects-list li a{
+        font-size: 14px;
+    }
+    .person-box .person-info-box a{
+        font-size: 14px;
+    }
+    .person-box .person-special h2{
+        font-size: 14px;
+    }
+    .personal-projects h1{
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .personal-projects-list{
+        gap: 10px;
+    }
+    .personal-projects-list li{
+        line-height: 16px;
+    }
+    /* TEAM DET */
+    /* Contact Page */
+
+    .contact-box h1{
+        font-size: 24px;
+        margin-bottom: 15px;
+        line-height: 30px;
+    }
+    .contact-box .contact-links span{
+        line-height: 17px;
+        font-size: 14px;
+    }
+    .right-img-contact {
+        margin-top: 40px;
+        width: 111px;
+        height: 105px;
+    }
+    .contact-box .contact-links{
+        gap: 10px;
+    }
+    .map-side{
+        padding: 0 0 45px 0;
+    }
+    .contact{
+        padding-bottom: 45px;
+    }
+    .contact-form{
+        padding: 0 0 45px 0;
+    }
+    .map-box-components{
+        height: 365px;
+    }
+    .map-bg{
+        height: initial;
+    }
+    .map-bg-2{
+        height: initial;
+    }
+    .map-box {
+        padding: 25px;
+        height: 365px;
+        border-radius: 14px;
+    }
+    .map-box iframe {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .form-box h1{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    form{
+        flex-direction: column;
+        margin-top: 25px;
+    }
+    .form-box form input{
+        width: 100%;
+        background-color: #EFEFEF;
+        border-radius: 8px;
+        border-bottom: none;
+        margin: 15px 0;
+        padding-left: 20px;
+    }
+    .form-box form input::placeholder{
+        font-size: 0;
+    }
+    .form-box form input:focus-visible,
+    .form-box form textarea:focus-visible{
+        border-bottom: 0;
+    }
+    .form-box form span{
+        font-size: 16px;
+        font-family: 'Lato';
+        font-weight: bold;
+        color: #1A1A1A;
+        display: block;
+        text-align: center;
+    }
+    .form-box form textarea{
+        background-color: #EFEFEF;
+        margin-top: 15px;
+        border-bottom: 0;
+    }
+    .form-box form textarea::placeholder{
+        font-size: 0;
+    }
+    .form-box form button{
+        font-size: 14px;
+        padding: 10px 42px;
+        margin-top: 30px;
+        border-radius: 5px;
+    }
+    /* Contact Page */
 }
 
 
@@ -1769,6 +2099,157 @@
         height: 15px;
     }
     /* TEAM PAGE */
+        /* TEAM DET */
+        .person-box h1{
+            font-size: 22px;
+            line-height: 20px;
+            margin-bottom: 10px;
+        }
+        .right-side-img .team-right-img{
+            width: 121px;
+            height: 121px;
+            border-radius: 10px;
+        }
+        .right-side-img .team-right-img img{
+            border-radius: 10px;
+        }
+        .person-info{
+            padding: 20px 0 0 0;
+        }
+        .person-box .person-info-box a{
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .person-box .person-special ul{
+            margin-bottom: 10px;
+            width: 160%;
+            padding-left: 10px;
+        }
+        .person-box .person-special ul li{
+            margin-right: 20px;
+            line-height: 18px;
+            font-size: 12px;
+            list-style: none;
+            position: relative;
+            margin-bottom: 5px;
+        }
+        .person-box .person-special ul li:before{
+            content: " ";
+            position: absolute;
+            left: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            height: 5px;
+            width: 5px;
+            background: #1A1A1A;
+        }
+        .person-box .person-special ul li a{
+          font-size: 12px;
+        }
+        .person-box .person-special .person-contact-link {
+            padding: 5px 13px;
+            font-size: 12px;
+            border-radius: 5px;
+        }
+        .person-info-text{
+            margin-top: 20px;
+            padding-right: 0;
+        }
+        .person-box .person-special h2{
+            margin-top: 5px;
+            padding: 0;
+        }
+        .person-info-text h3{
+            font-size: 14px;
+            line-height: 20px;  
+            margin-bottom: 10px;
+            padding: 0;
+        }
+        .person-info-text .text{
+            font-size: 12px;
+            line-height: 18px;
+            margin-bottom: 10px;
+        }
+        .person-info-text a{
+            font-size: 14px;
+        }
+        .personal-projects{
+            margin-top: 20px;
+        }
+        .personal-projects-list li a{
+            font-size: 14px;
+        }
+        .person-box .person-info-box a{
+            font-size: 14px;
+        }
+        .person-box .person-special h2{
+            font-size: 14px;
+        }
+        .personal-projects h1{
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .personal-projects-list{
+            gap: 10px;
+        }
+        .personal-projects-list li{
+            line-height: 16px;
+        }
+        /* TEAM DET */
+        /* Contact Page */
+        .contact-box h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            line-height: 27px;
+        }
+        .contact-box{
+            margin-top: 20px;
+        }
+         
+        .contact{
+            padding: 0 0 25px 0;
+        }
+        .map-side{
+            padding: 0 0 25px 0;
+        }
+        .contact-form {
+            padding: 0 0 30px 0
+        }
+        .map-box-components{
+            height: 158px;
+        }
+        .map-box{
+            width: 91%;
+            padding: 0;
+            height: 158px;
+        }
+        .form-box form input{
+            height: 38px;
+        }
+        .form-box form textarea{
+            height: 132px;
+            border-radius: 8px;
+        }
+        .btn-contact{
+            justify-content: center;
+        }
+        .form-box form button{
+            font-size: 12px;
+            margin-top: 25px;
+            border: none;
+            background-color: #F89C1C;
+            color: #fff;
+            transition: 0.4s;
+            padding: 6px 32px;
+        }
+        .form-box form button:hover{
+            background-color: #142C51;
+        }
+        .mob-row-contact{
+            width: initial!important;
+        }
+        /* Contact Page */
 }
 
 
@@ -1790,5 +2271,11 @@
     .services-item{
         width: 100%;
         margin-bottom: 10px;
+    }
+    .contact-box .contact-links{
+        flex-direction: column;
+    }
+    .contact-box .contact-links span{
+        width: 100%;
     }
 }

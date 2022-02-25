@@ -13,16 +13,18 @@ a{
 }
 :root{
     --fontLarge:68px;
-    --font1:46px;   
+    --font1:36px;   
     --font2:36px;
     --font3:30px;
     --font4:26px;
-    --font5:24px;
+    --font5:20px;
     --font6:21px;
     --font7:20px;
     --font8: 22px;
     --font9:17px;
-    --nav-fonts:20px;
+    --nav-fonts:16px;
+    --font04:24px;
+    --advert-font: 32px;
 }
 
 /* Pagination */
@@ -122,6 +124,9 @@ header{
     position: relative;
     /* padding-bottom: 30px; */
 }
+.navigation nav li:last-child{
+    margin: 0 0 0 20px;
+}
 .navigation nav li .nav-links{
     color: #FFFFFF;
     font-size: var(--nav-fonts);
@@ -129,12 +134,12 @@ header{
     font-weight: bold;
     transition: 0.5s;
     position: relative;
-    padding: 0 20px 30px 20px;
+    padding: 0 10px 30px 10px;
 }
 /* Submenu */
 .navigation nav li .submenu{
     position: absolute;
-    top: 55px;
+    top: 50px;
     max-height: 0px;
     left: 0;
     width: auto;
@@ -146,6 +151,7 @@ header{
     transition: 0.3s;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
+    white-space: nowrap;
 }
 .navigation nav li .submenu a{
     color: #FFFFFF;
@@ -153,13 +159,15 @@ header{
     font-family: 'Lato';
     font-weight: bold;
     transition: 0.4s;
-    margin-bottom: 15px;
-    /* margin-right: 20px; */
     width: 100%;
+    margin: 10px 0 0 0;
+}
+.navigation nav li .submenu a:last-child{
+    margin-bottom: 15px;
 }
 .navigation nav li:hover .submenu{
     max-height: 250px;
-    padding: 20px;
+    /* padding: 20px; */
     /* bottom: -260px; */
 }
 .navigation nav li .submenu a:hover{
@@ -179,6 +187,7 @@ header{
 }
 .header-bg .navigation nav li .submenu a{
     color: #1A1A1A;
+    white-space: nowrap;
 }
 .header-bg .navigation nav li .submenu{
     background-color: #fff;
@@ -530,6 +539,9 @@ header{
     color: #fff;
     line-height: 44px;
     margin-bottom: 20px;
+    text-align: center;
+    max-height: 90px;
+    overflow: hidden;
 }
 .main-item .main-text .text{
     color: #fff;
@@ -537,7 +549,7 @@ header{
     font-size: var(--font7);
     line-height: 30px;
     font-family: 'Lato';
-    max-height: 84px;
+    max-height: 88px;
     overflow: hidden;
     width: 702px;
 }
@@ -647,6 +659,10 @@ header{
     font-weight: bold;
     color: #142C51;
     transition: 0.4s;
+    max-width: 88%;
+    max-height: 26%;
+    overflow: hidden;
+    text-align: center;
 }
 .card:hover{
     background: #F89C1C;
@@ -676,7 +692,7 @@ header{
 .projects {
     padding: 100px 0;
     position: relative;
-    height: 1066px;
+    height: 1095px;
 }
 .project-text-side{
     width: 100%;
@@ -700,8 +716,11 @@ header{
     line-height: 29px;
     font-family: 'Lato';
     text-align: center;
-    max-height: 50px;
+    max-height: 56px;
     overflow: hidden;
+}
+.project-text .text p{
+    margin-bottom: 0;
 }
 /* .project-item{
     width: 400px;
@@ -747,7 +766,7 @@ header{
 
 .project-person h1{
     margin: 0;
-    font-size: var(--font3);
+    font-size: var(--font4);
     color: #1A1A1A;
     font-weight: bold;
     font-family: 'Lato';
@@ -755,7 +774,7 @@ header{
     line-height: 36px;
 }
 .project-person h2{
-    font-size: var(--font5);
+    font-size: 24px;
     color: #1A1A1A;
     font-family: 'Lato';
 }
@@ -764,7 +783,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 60px;
     position: absolute;
     bottom: 100px;
 }
@@ -809,6 +828,9 @@ header{
     font-family: 'Lato';
     color: #1A1A1A;
     text-align: center;
+    max-height: 56px;
+    overflow: hidden;
+    line-height: 29px;
 }
 
 .services-item{
@@ -822,7 +844,7 @@ header{
     background: #D3DEEF;
     transition: 0.4s;
     margin-bottom: 40px;
-    padding: 0 15px;
+    padding: 0 34px;
 }
 .services-item:hover{
     /* box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.75); */
@@ -843,20 +865,13 @@ header{
     height: 65%;
     object-fit: cover;
     transition: 0.4s;
+    filter: grayscale(100%);
 }
 .services-item .white-box span{
   font-size: 40px;
   transition: 0.4s;
 }
-.services-item .white-box img:last-child{
-    display: none;
-}
-.services-item:hover .white-box img:first-child{
-    display: none;
-}
-.services-item:hover .white-box img:last-child{
-    display: block;
-}
+
 .services-item h2{
     font-size: var(--font6);
     font-weight: bold;
@@ -873,7 +888,7 @@ header{
     font-family: 'Lato';
     line-height: 31px;
     max-width: 100%;
-    max-height: 90px;
+    max-height: 92px;
     text-align: center;
     overflow: hidden;
     transition: 0.4s;
@@ -888,14 +903,14 @@ header{
 .add-color:nth-child(3n):hover .services-item{
     background: rgba(24, 187, 201, 1);
 }
-.services-item:hover .white-box span{
-    color: #28579E;
+.services-item:hover .white-box img{
+    filter: invert(33%) sepia(100%) saturate(7436%) hue-rotate(210deg) brightness(91%) contrast(70%);
 }
-.add-color:nth-child(3n-1):hover .services-item .white-box span{
-   color: rgba(248, 156, 28, 1);
+.add-color:nth-child(3n-1):hover .services-item .white-box img{
+    filter: invert(59%) sepia(86%) saturate(470%) hue-rotate(349deg) brightness(97%) contrast(90%);
 }
-.add-color:nth-child(3n):hover .services-item .white-box span{
-    color: rgba(24, 187, 201, 1);
+.add-color:nth-child(3n):hover .services-item .white-box img{
+    filter: invert(56%) sepia(89%) saturate(399%) hue-rotate(136deg) brightness(98%) contrast(100%);
  }
 /* Services Section */
 
@@ -924,6 +939,9 @@ header{
     font-family: 'Lato';
     color: #1A1A1A;
     text-align: center;
+    max-height: 56px;
+    overflow: hidden;
+    line-height: 29px;
 }
 .projects-links{
     width: 100%;
@@ -934,6 +952,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 /* .projects-links .left-side-links li{
     list-style: none;
@@ -967,6 +986,7 @@ header{
     position: relative;
     padding-bottom: 5px;
     transition: 0.5s;
+    white-space: nowrap;
 }
 .all-projects-link::before{
     position: absolute;
@@ -1020,20 +1040,33 @@ header{
     width: 100%;
 }
 .recent-item .recent-text h2{
-    font-size: var(--font4);
+    font-size: var(--font04);
     font-weight: bold;
     font-family: 'Lato';
     color: #1A1A1A;
+    line-height: 34px;
+}
+.recent-item .recent-text .recent-text-center{
+    height: 65px;
+    overflow: hidden;
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
 }
 .recent-item .recent-text .text{
     font-size: var(--font7);
     line-height: 28px;
-    max-height: 52px;
+    height: 83px;
     overflow: hidden;
     transition: 0.4s;
     font-family: 'Lato';
     color: #727272;
     margin-top: 15px;
+    align-items: center;
+    display: grid;
+}
+.recent-item .recent-text .text p{
+    margin: auto 0;
 }
 /* .recent-item:hover .recent-project-img{
     box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.6);
@@ -1059,14 +1092,14 @@ header{
     align-items: center;
 }
 .advert-item{
-    font-size: var(--font2);
+    font-size: var(--advert-font);
     font-weight: bold;
     color: #fff;
     font-family: 'Lato';
     line-height: 50px;
     max-height: 95px;
     overflow: hidden;
-    max-width: 50%;
+    max-width: 55%;
 }
 .advert-contact{
     font-size: var(--font7);
@@ -1114,9 +1147,9 @@ header{
     flex-direction: column;
 }
 .footer-logo{
-    width: 192px;
-    height: 157px;
-    margin-bottom: 40px;
+    width: 172px;
+    height: 141px;
+    margin-bottom: 25px;
 }
 .footer-logo img{
     width: 100%;
@@ -1163,6 +1196,7 @@ header{
     color: #fff;
     font-family: 'Lato';
     margin-bottom: 25px;
+    text-transform: capitalize;
 }
 .footer-info a{
     font-size: var(--font7);
@@ -1171,9 +1205,13 @@ header{
     margin-bottom: 15px;
     transition: 0.5s;
     line-height: 24px;
+    text-transform: capitalize;
 }
 .footer-info a:hover{
     text-decoration: underline;
+}
+.footer-info a.nav-links {
+    margin-bottom: 0;
 }
 /* Footer */
 
@@ -1185,9 +1223,16 @@ header{
 /* Project List Page */
 
 .home-banner{
-    height: 300px;
+    height: 410px;
     width: 100%;
-    margin-top: 110px;
+    position: relative;
+}
+.home-banner::before{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
 }
 .home-banner img{
     width: 100%;
@@ -1197,7 +1242,7 @@ header{
 
 .text-section{
     width: 100%;
-    padding: 40px 0 0 0;
+    padding: 40px 0 0px 0;
 }
 .text-area{
     width: 100%;
@@ -1234,7 +1279,9 @@ header{
     font-family: 'Lato';
     color: #1A1A1A;
 }
-
+.text-area .text p{
+    margin-bottom: 0;
+}
 .right-side-img{
     width: 100%;
     padding-right: 75px;
@@ -1245,8 +1292,8 @@ header{
     padding-top:20px;
 } */
 .right-side-img .right-img {
-    width: 290px;
-    height: 270px;
+    width: 232px;
+    height: 216px;
     margin-bottom: 40px;
 }
 .right-side-img .right-img img{
@@ -1267,6 +1314,7 @@ header{
 
 .p-t-2{
     padding: 100px 0 50px 0;
+    margin-top: 50px;
 }
 
 /* About Us Page */
@@ -1282,13 +1330,13 @@ header{
 }
 .special-row-box{
     width: 100%;
-    padding: 60px 0 20px 0;
+    padding: 60px 0 40px 0;
 }
 .special-row-box:nth-child(2n){
     background: #F5F5F5;
 }
 .special-row-box:first-child{
-    padding: 0 0 20px;
+    padding: 0 0 40px;
 }
 .detail-text-area h1{
     font-size: var(--font4);
@@ -1315,9 +1363,9 @@ header{
 }
 
 .detail-image{
-    height: 430px;
+    height:365px;
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     padding: 0 3px;
     cursor: pointer;
     border-radius: 20px;
@@ -1325,9 +1373,7 @@ header{
 .p-r-1{
     padding-right: 17.1%;
 }
-.p-r-2{
-    padding-right: 13.8%;
-}
+
 
 .detail-image a img{
     width: 100%;
@@ -1375,7 +1421,7 @@ header{
 
 .services-boxes{
     width: 100%;
-    padding: 40px 0 60px 0;
+    padding: 60px 0 60px 0;
 }
 .services-boxes:nth-child(2n){
     background: #F9F9F9;
@@ -1394,7 +1440,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .services-boxes:first-child .img-icon{
     background: #7DA9EB;
@@ -1410,11 +1456,11 @@ header{
     height: 70%;
 }
 .service-text-box h1{
-    font-size: var(--font2);
+    font-size: 30px;
     color: #1A1A1A;
     font-family: 'Lato';
     font-weight: bold;
-    line-height: 44px;
+    line-height: 36px;
     margin-bottom: 20px;
 }
 .service-text-box .text{
@@ -1447,7 +1493,7 @@ header{
     text-decoration: underline;
 }
 .service-text-box .booking-service{
-    padding: 13px;
+    padding: 14px 24px;
     font-weight: bold;
     color: #fff;
     font-family: 'Lato';
@@ -1455,6 +1501,7 @@ header{
     background: #F89C1C;
     width: fit-content;
     border-radius: 10px;
+    font-size: 18px;
 }
 .service-text-box .booking-service:hover{
     background: #142C51;
@@ -1592,7 +1639,7 @@ header{
     flex-direction: column;
 }
 .person-box h1{
-    font-size: 48px;
+    font-size: 32px;
     font-weight: bold;
     font-family: 'Lato';
     margin-bottom: 25px;
@@ -1641,7 +1688,7 @@ header{
     text-decoration: underline;
 }
 .person-box .person-special .person-contact-link{
-    padding: 14px 30px;
+    padding: 10px 30px;
     color: #fff;
     font-weight: bold;
     font-family: 'Lato';
@@ -1659,8 +1706,9 @@ header{
     margin-top: 150px;
 }
 .right-side-img .team-right-img{
-    width: 378px;
-    height: 378px;
+    width: 340px;
+    height: 340px;
+    margin-bottom: 0;
 }
 .img-border img{
     border-radius: 20px;
@@ -1669,6 +1717,7 @@ header{
     margin-top: 60px;
     width: 100%;
     padding-right: 75px;
+    font-size: var(--font5);
 }
 
 .person-info-text h3{
@@ -1747,7 +1796,7 @@ header{
     margin-top: 40px;
 }
 .contact-box h1{
-    font-size: 42px;
+    font-size: 36px;
     font-family: 'Lato';
     color: #1A1A1A;
     font-weight: bold;
@@ -1765,7 +1814,7 @@ header{
     font-size: var(--font5);
     color: #1A1A1A;
     font-family: 'Lato';
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     line-height: 30px;
 }
 .contact-box .contact-links span a{
@@ -1810,7 +1859,7 @@ header{
     width: 75%;
     height: 685px;
     padding: 60px;
-    border-radius: 36px;
+    border-radius: 18px;
     background: #F1F1F2;
     position: absolute;
     bottom:0;
@@ -1820,8 +1869,8 @@ header{
 .map-box iframe{
     width: 100%;
     height: 100%;
-    border-top-left-radius: 33px;
-    border-top-right-radius: 33px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
 }
 .contact-form{
     width: 100%;
@@ -1835,7 +1884,7 @@ header{
     align-items: center;
 }
 .form-box h1{
-    font-size: 38px;
+    font-size: var(--font1);
     font-weight: bold;
     color: #1A1A1A;
     text-align: center;
@@ -1856,7 +1905,7 @@ form{
     font-family: 'Lato';
     font-weight: bold;
     height: 50px;
-    border-bottom: 2px solid #1A1A1A;
+    border-bottom: 1px solid #1A1A1A;
     width: 46%;
     margin-bottom: 60px;
     color: #1A1A1A;
@@ -1873,7 +1922,7 @@ form{
     font-size: 18px;
     font-family: 'Lato';
     font-weight: bold;
-    border-bottom: 2px solid #1A1A1A;
+    border-bottom: 1px solid #1A1A1A;
     transition: 0.3s;
 }
 .form-box form input::placeholder,
@@ -1882,7 +1931,7 @@ form{
 }
 .form-box form input:focus-visible,
 .form-box form textarea:focus-visible{
-    border-bottom: 2px solid rgba(26, 26, 26, 0.5);
+    border-bottom: 1px solid rgba(26, 26, 26, 0.5);
 }
 .form-box form input:focus-visible::placeholder,
 .form-box form textarea:focus-visible::placeholder{
@@ -1894,15 +1943,16 @@ form{
     font-family: 'Lato'; 
     color: #1A1A1A;
     padding: 14px 59px;
-    border: 1px solid #575762;
+    border: 2px solid #575762;
     border-radius: 10px;
     margin-top: 50px;
     background: transparent;
     transition: 0.4s;
 }
 .form-box form button:hover{
-    background: #F1F1F2;
-    border: 1px solid transparent;
+    background: #F89C1C;
+    color: #fff;
+    border: 2px solid transparent;
     /* box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.5); */
 }
 .btn-contact{
@@ -1911,3 +1961,150 @@ form{
     justify-content: flex-end;
 }
 /* Contact */
+/* Search */
+.search-section{
+    padding: 100px 0;
+}
+.search-page-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.search-form-page form{
+    max-width: 664px;
+    position: relative;
+    height: 54px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.search-form-page form input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: #F5F5F5;
+    padding-left: 74px;
+    font-size: 22px;
+    font-family: 'Lato';
+    color: #1A1A1A;
+    transition: 0.4s;
+}
+.search-form-page form input::placeholder{
+    color: #8D8D8D;
+}
+.search-form-page form button{
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #F89C1C;
+    transition: 0.4s;
+
+}
+.search-form-page form button span{
+    font-size: 24px;
+    color: #fff;
+}
+.search-results-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.search-results{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 35px;
+}
+.search-results h1{
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    color: #1A1A1A;
+    margin-bottom: 15px;
+    width: fit-content;
+    text-transform: capitalize;
+}
+.search-results .text{
+    font-family: 'Lato';
+    font-size: 26px;
+    line-height: 35px;
+    color: #1A1A1A;
+    text-transform: capitalize;
+}
+/* Search */
+
+/* HTML KA */
+
+html:lang(ka) .search-box form input{
+    font-family: 'BPG GEL DejaVu Sans';
+}
+/* TiTLE  */
+
+html:lang(ka) .main-item .main-text h1, 
+html:lang(ka) .about-content .about-text h1,
+html:lang(ka) .card span, 
+html:lang(ka) .footer-info h4, 
+html:lang(ka) .project-person h1, 
+html:lang(ka) .recent-item .recent-text h2, 
+html:lang(ka) .recent-project-text h1, 
+html:lang(ka) .services-item h2, 
+html:lang(ka) .project-person h1, 
+html:lang(ka) .project-text h1,
+html:lang(ka) .text-area .title-text h1,
+html:lang(ka) .detail-text-area h1,
+html:lang(ka) .detail-text-area h2,
+html:lang(ka) .service-text-box h1,
+html:lang(ka) .team-members .members-info h1,
+html:lang(ka) .team-list-links h1,
+html:lang(ka) .contact-box h1,
+html:lang(ka) .form-box h1,
+html:lang(ka) .person-box h1,
+html:lang(ka) .person-box .person-special h2{
+    font-family: 'BPG DejaVu Sans Caps';
+}
+/* TITLE */
+
+/* TEXT */
+html:lang(ka) .navigation nav li .nav-links{
+    font-family: 'BPG GEL DejaVu Sans';
+}
+
+html:lang(ka) .main-item .main-text .text, 
+html:lang(ka) .project-text .text, 
+html:lang(ka) .project-person h2, 
+html:lang(ka) .services-text h3,
+html:lang(ka) .services-item .text, 
+html:lang(ka) .recent-project-text h3, 
+html:lang(ka) .recent-item .recent-text .text,
+html:lang(ka) .about-content .about-text .text, 
+html:lang(ka) .advert-item, 
+html:lang(ka) .projects-links .left-side-links button, 
+html:lang(ka) .all-projects-link, 
+html:lang(ka) .footer-info a,
+html:lang(ka) .text-area .text,
+html:lang(ka) .detail-text-area .text,
+html:lang(ka) .service-text-box .text,
+html:lang(ka) .service-text-box ul li a,
+html:lang(ka) .service-text-box .booking-service,
+html:lang(ka) .team-members .members-info h2,
+html:lang(ka) .team-list-links .list-links button,
+html:lang(ka) .contact-box .contact-links span,
+html:lang(ka) .contact-box .contact-links span a,
+html:lang(ka) .form-box form input,
+html:lang(ka) .form-box form button,
+html:lang(ka) .person-box .person-info-box a,
+html:lang(ka) .person-info-text{
+    font-family: 'BPG GEL DejaVu Sans';
+}
+/* TEXT */

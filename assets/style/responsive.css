@@ -18,8 +18,14 @@
         height: 404px;
         width: 95%;
     }
+    .navigation nav li{
+        margin:0 5px;
+    }
+    .navigation nav li:last-child{
+        margin:0 0 0 15px;
+    }
     .navigation nav li .nav-links{
-        padding: 0 15px 30px 15px;
+        padding: 0 10px 30px 10px;
     }
     .navigation nav li:last-child .nav-links{
         padding: 12px 26px;
@@ -38,12 +44,12 @@
         height: 330px;
     }
     .projects{
-        height: 965px;
+        height: 998px;
     }
     /* Project Detail Page */
 
     .detail-image{
-        height: 390px;
+        height: 316px;
     }
     /* Project Detail Page */
     /* Services Page */
@@ -84,6 +90,7 @@
         --font4:20px;
         --font5:18px;
         --font7:14px;
+        --font04:22px;
     }
 /* Home Page */
 
@@ -203,7 +210,7 @@
 
     .projects{
         padding: 50px 0;
-        height: 700px;
+        height: 728px;
     }
     .members-link{
         bottom: 50px;
@@ -276,6 +283,7 @@
     .services-item .text{
         font-size: var(--font7);
         line-height: 21px;
+        max-height: 64px;
     }
     /* Services */
 
@@ -316,6 +324,7 @@
     }
     .advert-item{
         line-height: 35px;
+        max-height: 75px;
     }
     /* Advert */
     /* Footer */
@@ -344,8 +353,8 @@
     /* Home Page */
     /*  About Page */
     .home-banner{
-        margin-top: 78px;
-        height: 213px;
+        /* margin-top: 78px; */
+        height: 290px;
     }
     .bandcamp{
         margin-top: 20px;
@@ -381,6 +390,7 @@
     }
     .p-t-2{
         padding: 50px 0 25px 0;
+        margin-top: 25px;
     }
     /*  About Page */
     /* Project Page */
@@ -423,7 +433,7 @@
     }
     .detail-image{
         padding: 0;
-        height: 361px;
+        height: 270px;
         margin-bottom: 25px;
     }
     .p-tt-2{
@@ -592,6 +602,7 @@
         --font4:18px;
         --font5:16px;
         --font7:12px;
+        --font04:18px;
     }
     .search-box form .search-form-box{
         width: 78px;
@@ -639,7 +650,7 @@
     }
     .projects{
         padding: 40px 0;
-        height: 615px;
+        height: 638px;
     }
     .members-link{
         bottom: 40px;
@@ -649,6 +660,7 @@
     }
     .project-text .text{
         line-height: 22px;
+        max-height:48px;
     }
     .slick-slide .project-img{
         height: 217px;
@@ -709,7 +721,13 @@
     }
     .recent-item .recent-text .text{
         line-height: 22px;
-        max-height: 48px;
+        max-height: 69px;
+    }
+    .recent-item .recent-text .recent-text-center{
+        height: 50px;
+    }
+    .recent-item .recent-text h2{
+        line-height:26px;
     }
     .advert-box{
         padding: 50px 0;
@@ -731,6 +749,7 @@
     /*  About Page */
     .p-t-2{
         padding: 40px 0 20px 0;
+        margin-top: 20px;
     }
     .card{
         margin-bottom: 20px;
@@ -780,7 +799,7 @@
     /* Project Detail Page */
     .detail-image{
         padding: 0;
-        height: 300px;
+        height: 220px;
         margin-bottom: 25px;
     }
     .detail-text-area .text{
@@ -1050,14 +1069,17 @@
     }
    .burger-links ul{
        padding: 0;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
+      display: grid;
+      place-content: center;
+   }
+   .burger-links ul .lang-box .lang{
+       text-align: center;
    }
    .burger-links ul li{
        list-style: none;
        margin-bottom: 30px;
        position: relative;
+       text-align: center;
    }
    .burger-links ul li a{
        font-size: 26px;
@@ -1179,7 +1201,7 @@
 
     .projects{
         padding: 35px 0;
-        height: 555px;
+        height: 587px;
     }
     .more-link{
         bottom: 35px;
@@ -1195,7 +1217,7 @@
     }
     .project-person h2{
         line-height: 15px;
-        font-size: 12px;
+        font-size: 14px;
     }
     .project-person{
         height: 42px!important;
@@ -1258,6 +1280,7 @@
     .services-item .text{
         font-size: 12px;
         line-height: 14px;
+        max-height: 44px;
     }
     /* Service Section */
     /* Recent Project */
@@ -1270,7 +1293,8 @@
         margin-bottom: 10px;
     }
     .recent-project-text h3{
-        line-height: 14px;
+        line-height: 22px;
+        max-height: 44px;
     }
     .recent-project-text{
         margin-bottom: 30px;
@@ -1299,13 +1323,17 @@
     .recent-item .recent-project-img img{
         border-radius: 10px;
     }
+    .recent-item .recent-text .recent-text-center{
+        height: 45px;
+    }
     .recent-item .recent-text h2{
         font-size: 16px;
+        line-height: 22px;
     }
     .recent-item .recent-text .text{
         font-size: 14px;
         margin-top: 8px;
-        line-height: 20px;
+        line-height: 18px;
         max-height: 57px;
     }
     /* Recent Project */
@@ -1352,8 +1380,8 @@
       /* About Page */
 
       .home-banner{
-          margin-top: 70px;
-          height: 150px;
+          /* margin-top: 70px; */
+          height: 220px;
       }
       .bandcamp ul{
           flex-wrap: wrap;
@@ -1383,6 +1411,7 @@
     }
     .p-t-2{
         padding: 35px 0 15px 0;
+        margin-top: 15px;
     }
     /* About Page */
     /* Project Page */
@@ -1449,7 +1478,7 @@
        .service-text-box .text{
            font-size: 14px;
            line-height: 18px;
-           max-height: 100px;
+           max-height: 92px;
            margin-bottom: 10px;
        }
        .service-text-box ul{
@@ -1807,13 +1836,14 @@
     }
     .projects{
         padding: 20px 0;
-        height: 382px;
+        height: 398px;
     }
     .members-link{
         bottom: 20px;
     }
     .project-text .text{
         line-height: 15px;
+        max-height: 32px;
     }
     .project-text{
         margin-bottom: 20px;
@@ -1845,6 +1875,10 @@
     .services-text h1{
         line-height: 22px;
         margin-bottom: 8px;
+    }
+    .services-text h3{
+        line-height: 18px;
+        max-height: 38px;
     }
     .mg-center-2{
         margin: 0 auto;
@@ -1881,6 +1915,10 @@
         margin-bottom: 8px;
         line-height: 22px;
     }
+    .recent-project-text h3{
+        line-height: 18px;
+        max-height: 38px;
+    }
     .right-side-links{
         position: absolute;
         bottom: 20px;
@@ -1893,17 +1931,23 @@
     .pad-l-r{
         padding:  0 5px;
     }
+    .recent-item .recent-text .recent-text-center{
+        height: 36px;
+    }
     .recent-item .recent-text h2{
         font-size: 14px;
+        line-height: 18px;
     }
     .recent-item .recent-text .text{
         font-size: 12px;
         line-height: 15px;
+        max-height: 46px;
     }
     .advert-item{
         font-size: 14px;
         line-height: 20px;
         max-width: 65%;
+        max-height: 42px;
     }
     .advert-box{
         padding: 20px 0;
@@ -1967,6 +2011,7 @@
     }
     .p-t-2{
         padding: 20px 0 8px 0;
+        margin-top: 10px;
     }
     /* About Page */
     /* Project page */

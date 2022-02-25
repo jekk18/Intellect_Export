@@ -1,4 +1,25 @@
 @font-face {
+    font-family: 'BPG GEL DejaVu Sans';
+    src: url('../fonts/BPGGELDejaVuSans.woff2') format('woff2'),
+        url('../fonts/BPGGELDejaVuSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BPG DejaVu Sans Caps';
+    src: url('../fonts/BPGDejaVuSansCaps-Book.woff2') format('woff2'),
+        url('../fonts/BPGDejaVuSansCaps-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+@font-face {
     font-family: 'Lato';
     src: url('../fonts/Lato-BoldItalic.woff2') format('woff2'),
         url('../fonts/Lato-BoldItalic.woff') format('woff');
